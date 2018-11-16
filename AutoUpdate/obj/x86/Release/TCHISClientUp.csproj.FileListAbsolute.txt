@@ -1,0 +1,11 @@
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCHISClientUp.exe.config
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCHISClientUp.exe
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCHISClientUp.pdb
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.Properties.Resources.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.csproj.GenerateResource.Cache
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.exe
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.pdb
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.ConfirmControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.FormMain.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.StartControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Release\TCHISClientUp.UpdateControl.resources

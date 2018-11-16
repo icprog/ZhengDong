@@ -1,0 +1,6 @@
+09:45:37.939  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+15:30:58.081  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+16:05:39.347  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133

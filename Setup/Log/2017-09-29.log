@@ -1,0 +1,64 @@
+15:57:45.531  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+15:57:55.621  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+15:57:58.887  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+15:58:01.932  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+15:58:05.400  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:02:43.586  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:16.969  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:18.979  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:22.189  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:23.482  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:24.150  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:24.807  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:05:25.525  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:07:37.795  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:10:11.397  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820
+16:10:22.301  异常信息：Parameter '@WithSkinBool' has already been defined.
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, Int32 index)
+   在 FishBll.MySqlHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 596
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 820

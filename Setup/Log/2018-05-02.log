@@ -1,0 +1,101 @@
+09:47:50.655  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+09:47:59.354  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+09:48:24.327  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+09:48:38.872  异常信息：Unknown column 'codeNumZdi' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+09:48:46.663  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+09:49:10.693  异常信息：Unknown column 'codeNumZdi' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+09:58:34.915  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+11:07:15.280  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+12:25:41.882  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+12:26:44.037  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+15:09:40.996  异常信息：Unknown column 'rabZy' in 'field list'
+  堆栈信息:   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 830
+16:14:28.936  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\UserManager.cs:行号 133

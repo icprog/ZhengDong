@@ -1,0 +1,11 @@
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\EyarUp.exe.config
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\EyarUp.exe
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\EyarUp.pdb
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.ConfirmControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.FormMain.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.Properties.Resources.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.StartControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.UpdateControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.csproj.GenerateResource.Cache
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.exe
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\EyarUp\obj\x86\Release\EyarUp.pdb

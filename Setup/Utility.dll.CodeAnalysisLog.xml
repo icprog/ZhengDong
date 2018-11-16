@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Administrator\Desktop\zhengdong\Setup\Utility.dll">
+   <Modules>
+    <Module Name="utility.dll">
+     <Namespaces>
+      <Namespace Name="Utility">
+       <Types>
+        <Type Name="HttpDownload" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DownloadCompleted" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">将 'HttpDownload.DownloadProgressCompletedHandler' 的第一个参数声明为一个名为“sender”的对象。</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">将 'HttpDownload.DownloadProgressCompletedHandler' 的第二个参数声明为 EventArgs，或者声明为扩展 EventArgs 的类型的名为“e”的实例。</Issue>
+             <Issue Name="TooMany" Certainty="95" Level="Error">移除 'HttpDownload.DownloadProgressCompletedHandler' 的除前两个参数以外的所有参数。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DownloadProgress" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">将 'HttpDownload.DownloadProgressChangedHandler' 的第一个参数声明为一个名为“sender”的对象。</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">将 'HttpDownload.DownloadProgressChangedHandler' 的第二个参数声明为 EventArgs，或者声明为扩展 EventArgs 的类型的名为“e”的实例。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HttpUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Post(System.Net.CookieContainer,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.String&amp;,System.Net.WebHeaderCollection&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="HttpUtil.cs" Line="135">'HttpUtil.Post(CookieContainer, string, string, string, string, string, bool, ref string, ref WebHeaderCollection)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="HttpUtil.cs" Line="129">可以在方法 'HttpUtil.Post(CookieContainer, string, string, string, string, string, bool, ref string, ref WebHeaderCollection)' 中多次释放对象 'responseStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 129</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PostFile(System.Net.CookieContainer,System.String,System.Collections.Hashtable,System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.String,System.String,System.String,System.Boolean,System.String&amp;,System.Net.WebHeaderCollection&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="HttpUtil.cs" Line="301">'HttpUtil.PostFile(CookieContainer, string, Hashtable, string, string, string, int, string, bool, string, string, string, bool, ref string, ref WebHeaderCollection)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="HttpUtil.cs" Line="276">可以在方法 'HttpUtil.PostFile(CookieContainer, string, Hashtable, string, string, string, int, string, bool, string, string, string, bool, ref string, ref WebHeaderCollection)' 中多次释放对象 'fs'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 276, 313</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="HttpUtil.cs" Line="296">可以在方法 'HttpUtil.PostFile(CookieContainer, string, Hashtable, string, string, string, int, string, bool, string, string, string, bool, ref string, ref WebHeaderCollection)' 中多次释放对象 'responseStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 296</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ImageZoomCut" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DrawWatermarkImage(System.Drawing.Image,System.String)" Kind="Method" Static="True" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ImageZoomCut.cs" Line="478">可以在方法 'ImageZoomCut.DrawWatermarkImage(Image, string)' 中多次释放对象 'wrImage'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 478</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawWatermarkText(System.Drawing.Image,System.String)" Kind="Method" Static="True" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ImageZoomCut.cs" Line="437">可以在方法 'ImageZoomCut.DrawWatermarkText(Image, string)' 中多次释放对象 'gWater'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 437</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ZoomAuto(System.IO.Stream,System.String,System.Double,System.Double,System.Boolean,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ImageZoomCut.cs" Line="334">可以在方法 'ImageZoomCut.ZoomAuto(Stream, string, double, double, bool, string, string)' 中多次释放对象 'initImage'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 334</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IniUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetPrivateProfileString(System.String,System.String,System.String,System.Byte[],System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'IniUtil.GetPrivateProfileString(string, string, string, byte[], int, string)'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'IniUtil.GetPrivateProfileString(string, string, string, byte[], int, string)' 的返回类型在 32 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'long'。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'IniUtil.GetPrivateProfileString(string, string, string, byte[], int, string)' 的返回类型在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'long'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'section' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'key' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'def' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'filePath' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetPrivateProfileString(System.String,System.String,System.String,System.Text.StringBuilder,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'IniUtil.GetPrivateProfileString(string, string, string, StringBuilder, int, string)'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'IniUtil.GetPrivateProfileString(string, string, string, StringBuilder, int, string)' 的返回类型在 32 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'long'。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'IniUtil.GetPrivateProfileString(string, string, string, StringBuilder, int, string)' 的返回类型在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'long'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'section' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'key' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'def' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'retval' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'filePath' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WritePrivateProfileString(System.String,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'IniUtil.WritePrivateProfileString(string, string, string, string)'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'IniUtil.WritePrivateProfileString(string, string, string, string)' 的返回类型在 32 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'long'。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'IniUtil.WritePrivateProfileString(string, string, string, string)' 的返回类型在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'long'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'section' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'key' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'value' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'filePath' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InternetProxy" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SetIESettings(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="30">'InternetProxy.SetIESettings(string)' 调入具有 LinkDemand 的 'Marshal.AllocCoTaskMem(int)'。通过此调用，'Marshal.AllocCoTaskMem(int)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="30">'InternetProxy.SetIESettings(string)' 调入具有 LinkDemand 的 'Marshal.SizeOf(object)'。通过此调用，'Marshal.SizeOf(object)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="30">'InternetProxy.SetIESettings(string)' 调入具有 LinkDemand 的 'Marshal.StringToHGlobalAnsi(string)'。通过此调用，'Marshal.StringToHGlobalAnsi(string)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="30">'InternetProxy.SetIESettings(string)' 调入具有 LinkDemand 的 'Marshal.StructureToPtr(object, IntPtr, bool)'。通过此调用，'Marshal.StructureToPtr(object, IntPtr, bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIESettings(string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetIEUserPassword(System.IntPtr,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="57">'InternetProxy.SetIEUserPassword(IntPtr, string, string)' 调入具有 LinkDemand 的 'Marshal.GetLastWin32Error()'。通过此调用，'Marshal.GetLastWin32Error()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIEUserPassword(IntPtr, string, string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIEUserPassword(IntPtr, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="57">'InternetProxy.SetIEUserPassword(IntPtr, string, string)' 调入具有 LinkDemand 的 'Marshal.SizeOf(object)'。通过此调用，'Marshal.SizeOf(object)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIEUserPassword(IntPtr, string, string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIEUserPassword(IntPtr, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="InternetProxy.cs" Line="57">'InternetProxy.SetIEUserPassword(IntPtr, string, string)' 调入具有 LinkDemand 的 'Marshal.StringToHGlobalAnsi(string)'。通过此调用，'Marshal.StringToHGlobalAnsi(string)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'InternetProxy.SetIEUserPassword(IntPtr, string, string)'&#xD;&#xA;   -&gt;'InternetProxy.SetIEUserPassword(IntPtr, string, string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InternetProxy+Struct_INTERNET_PROXY_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalError">在 'InternetProxy.Struct_INTERNET_PROXY_INFO' 上实现 IDisposable。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#proxy" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'InternetProxy.Struct_INTERNET_PROXY_INFO.proxy' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#proxyBypass" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'InternetProxy.Struct_INTERNET_PROXY_INFO.proxyBypass' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AnimateWindow(System.IntPtr,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.AnimateWindow(IntPtr, int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CloseHandle(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CloseHandle(IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FindWindow(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.FindWindow(string, string)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.FindWindow(string, string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpClassName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpWindowName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FindWindowEx(System.Int32,System.Int32,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.FindWindowEx(int, int, string, string)' 的参数 'hWnd1' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.FindWindowEx(int, int, string, string)' 的参数 'hWnd2' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.FindWindowEx(int, int, string, string)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.FindWindowEx(int, int, string, string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpsz1' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpsz2' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCursorPos(System.Drawing.Point&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetCursorPos(ref Point)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSystemMenu(System.IntPtr,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetSystemMenu(IntPtr, bool)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSystemMetrics(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetSystemMetrics(int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetWindowRect(System.IntPtr,Utility.NativeMethods+Rect&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetWindowRect(IntPtr, out NativeMethods.Rect)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetWindowThreadProcessId(System.IntPtr,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GetWindowThreadProcessId(IntPtr, ref IntPtr)' 的返回类型在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'IntPtr'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetWindowThreadProcessId(IntPtr, ref IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GlobalAddAtom(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalAddAtom(string)' 的返回类型在 32 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalAddAtom(string)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GlobalAddAtom(string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpString' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GlobalDeleteAtom(System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalDeleteAtom(uint)' 的参数 'nAtom' 在 32 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 32 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalDeleteAtom(uint)' 的参数 'nAtom' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalDeleteAtom(uint)' 的返回类型在 32 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalDeleteAtom(uint)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GlobalDeleteAtom(uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GlobalFindAtom(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalFindAtom(string)' 的返回类型在 32 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 32 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.GlobalFindAtom(string)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 2。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'uint'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GlobalFindAtom(string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpString' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertMenu(System.IntPtr,System.UInt32,System.Int32,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.InsertMenu(IntPtr, uint, int, int, string)' 的参数 'wIDNewItem' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.InsertMenu(IntPtr, uint, int, int, string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="4" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpNewItem' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternetCheckConnection(System.String,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.InternetCheckConnection(string, int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpszUrl' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternetGetConnectedState(System.Int32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.InternetGetConnectedState(ref int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternetGetCookie(System.String,System.String,System.Text.StringBuilder,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.InternetGetCookie(string, string, StringBuilder, ref int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpszUrlName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lbszCookieName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpszCookieData' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternetSetCookie(System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.InternetSetCookie(string, string, string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpszUrlName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lbszCookieName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpszCookieData' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternetSetOption(System.IntPtr,System.Int32,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.InternetSetOption(IntPtr, int, IntPtr, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsNetworkAlive(System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.IsNetworkAlive(out int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenProcess(System.Int32,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.OpenProcess(int, IntPtr, IntPtr)' 的参数 'bInheritHandle' 在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'IntPtr'。</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.OpenProcess(int, IntPtr, IntPtr)' 的参数 'dwProcessId' 在 64 位 平台上的字节宽度将为 8。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 4。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'IntPtr'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.OpenProcess(int, IntPtr, IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadProcessMemoryEx(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32,System.UInt32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.ReadProcessMemoryEx(IntPtr, IntPtr, IntPtr, int, ref uint)' 的参数 'nSize' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.ReadProcessMemoryEx(IntPtr, IntPtr, IntPtr, int, ref uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RedrawWindow(System.IntPtr,Utility.NativeMethods+Rect&amp;,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.RedrawWindow(IntPtr, ref NativeMethods.Rect, int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SendMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.SendMessage(IntPtr, int, int, int)' 的参数 'wParam' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.SendMessage(IntPtr, int, int, int)' 的参数 'lParam' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.SendMessage(IntPtr, int, int, int)' 的返回类型在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SendMessage(IntPtr, int, int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SendMessage(IntPtr, int, IntPtr, IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetCursorPos(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SetCursorPos(int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetForegroundWindow(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SetForegroundWindow(IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowWindow(System.Runtime.InteropServices.HandleRef,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.ShowWindow(HandleRef, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowWindowAsync(System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.ShowWindowAsync(IntPtr, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateWindow(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.UpdateWindow(int)' 的参数 'hwnd' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.UpdateWindow(int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VirtualAllocEx(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.VirtualAllocEx(IntPtr, int, int, int, int)' 的参数 'lpAddress' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.VirtualAllocEx(IntPtr, int, int, int, int)' 的参数 'dwSize' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.VirtualAllocEx(IntPtr, int, int, int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VirtualFreeEx(System.IntPtr,System.IntPtr,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.VirtualFreeEx(IntPtr, IntPtr, int, int)' 的参数 'dwSize' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.VirtualFreeEx(IntPtr, IntPtr, int, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NetworkMonitor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'NetworkMonitor' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'Timer'。如果以前提供过 'NetworkMonitor'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ShortcutUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateShortcut(System.String,System.String,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ShortcutUtil.cs" Line="175">'ShortcutUtil.CreateShortcut(string, string, string, string, string)' 调入具有 LinkDemand 的 'Marshal.ReleaseComObject(object)'。通过此调用，'Marshal.ReleaseComObject(object)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'ShortcutUtil.CreateShortcut(string, string, string, string, string)'&#xD;&#xA;   -&gt;'ShortcutUtil.CreateShortcut(string, string, string, string, string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetFolderPath(System.Int32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ShortcutUtil.cs" Line="303">'ShortcutUtil.SHGetFolderPath(int)' 调入具有 LinkDemand 的 'Marshal.FreeBSTR(IntPtr)'。通过此调用，'Marshal.FreeBSTR(IntPtr)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'ShortcutUtil.SHGetFolderPath(int)'&#xD;&#xA;   -&gt;'ShortcutUtil.SHGetFolderPath(int)'&#xD;&#xA;   -&gt;'ShortcutUtil.GetSpecialFolderPath(uint)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ShortcutUtil.cs" Line="303">'ShortcutUtil.SHGetFolderPath(int)' 调入具有 LinkDemand 的 'Marshal.PtrToStringBSTR(IntPtr)'。通过此调用，'Marshal.PtrToStringBSTR(IntPtr)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'ShortcutUtil.SHGetFolderPath(int)'&#xD;&#xA;   -&gt;'ShortcutUtil.SHGetFolderPath(int)'&#xD;&#xA;   -&gt;'ShortcutUtil.GetSpecialFolderPath(uint)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ShortcutUtil.cs" Line="303">'ShortcutUtil.SHGetFolderPath(int)' 调入具有 LinkDemand 的 'Marshal.StringToBSTR(string)'。通过此调用，'Marshal.StringToBSTR(string)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'ShortcutUtil.SHGetFolderPath(int)'&#xD;&#xA;   -&gt;'ShortcutUtil.SHGetFolderPath(int)'&#xD;&#xA;   -&gt;'ShortcutUtil.GetSpecialFolderPath(uint)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetFolderPathW(System.IntPtr,System.Int32,System.IntPtr,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'ShortcutUtil.SHGetFolderPathW(IntPtr, int, IntPtr, uint, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SystemMenuNativeWindow" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">对 'SystemMenuNativeWindow' 提供 Dispose(bool) 的可重写实现或将该类型标记为密封。对 Dispose(false) 的调用应仅清理本机资源。对 Dispose(true) 的调用应既清理托管资源又清理本机资源。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(System.Windows.Forms.Form)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="14">'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)' 调入具有 LinkDemand 的 'NativeWindow.AssignHandle(IntPtr)'。通过此调用，'NativeWindow.AssignHandle(IntPtr)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="14">'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)' 调入具有 LinkDemand 的 'NativeWindow.NativeWindow()'。通过此调用，'NativeWindow.NativeWindow()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DisposableTypesShouldDeclareFinalizer" Category="Microsoft.Usage" CheckId="CA2216" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="32">针对 'SystemMenuNativeWindow' 实现终结器或析构函数。</Issue>
+            </Message>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="32">'SystemMenuNativeWindow.Dispose()' 调入具有 LinkDemand 的 'NativeWindow.ReleaseHandle()'。通过此调用，'NativeWindow.ReleaseHandle()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.Dispose()'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.Dispose()'</Issue>
+            </Message>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="32">修改 'SystemMenuNativeWindow.Dispose()'，使它先调用 Dispose(true)，然后对当前对象实例(在 Visual Basic 中为“this”或“Me”)调用 GC.SuppressFinalize，最后返回。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSystemMenu()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="44">'SystemMenuNativeWindow.GetSystemMenu()' 调入具有 LinkDemand 的 'NativeWindow.Handle.get()'。通过此调用，'NativeWindow.Handle.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.GetSystemMenu()'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.GetSystemMenu()'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.SystemMenuNativeWindow(Form)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnWmSysCommand(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="77">'SystemMenuNativeWindow.OnWmSysCommand(ref Message)' 调入具有 LinkDemand 的 'Message.Result.set(IntPtr)'。通过此调用，'Message.Result.set(IntPtr)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.OnWmSysCommand(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.OnWmSysCommand(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="77">'SystemMenuNativeWindow.OnWmSysCommand(ref Message)' 调入具有 LinkDemand 的 'Message.WParam.get()'。通过此调用，'Message.WParam.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.OnWmSysCommand(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.OnWmSysCommand(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="77">'SystemMenuNativeWindow.OnWmSysCommand(ref Message)' 调入具有 LinkDemand 的 'NativeWindow.WndProc(ref Message)'。通过此调用，'NativeWindow.WndProc(ref Message)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.OnWmSysCommand(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.OnWmSysCommand(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Revert()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="95">'SystemMenuNativeWindow.Revert()' 调入具有 LinkDemand 的 'NativeWindow.Handle.get()'。通过此调用，'NativeWindow.Handle.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.Revert()'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.Revert()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WndProc(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="106">'SystemMenuNativeWindow.WndProc(ref Message)' 调入具有 LinkDemand 的 'Message.Msg.get()'。通过此调用，'Message.Msg.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="106">'SystemMenuNativeWindow.WndProc(ref Message)' 调入具有 LinkDemand 的 'NativeWindow.WndProc(ref Message)'。通过此调用，'NativeWindow.WndProc(ref Message)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'&#xD;&#xA;   -&gt;'SystemMenuNativeWindow.WndProc(ref Message)'</Issue>
+            </Message>
+            <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemMenuNativeWindow.cs" Line="106">向 'SystemMenuNativeWindow.WndProc(ref Message)' 添加下列安全特性以匹配基方法 'NativeWindow.WndProc(ref Message)' 上的 LinkDemand: [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)]。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SystemTray" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CheckTrayIcon(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="SystemTray.cs" Line="66">'SystemTray.CheckTrayIcon(string)' 调入具有 LinkDemand 的 'Marshal.UnsafeAddrOfPinnedArrayElement(Array, int)'。通过此调用，'Marshal.UnsafeAddrOfPinnedArrayElement(Array, int)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SystemTray.CheckTrayIcon(string)'&#xD;&#xA;   -&gt;'SystemTray.CheckTrayIcon(string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UDPSocket" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'UDPSocket' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'UdpClient'。如果以前提供过 'UDPSocket'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#SOCKETEventArrive" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">将 'UDPSocket.SOCKETDelegateArrive' 的第一个参数声明为一个名为“sender”的对象。</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">将 'UDPSocket.SOCKETDelegateArrive' 的第二个参数声明为 EventArgs，或者声明为扩展 EventArgs 的类型的名为“e”的实例。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WebRequestEx" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">将 [Serializable] 添加到 'WebRequestEx'，原因是此类型实现了 ISerializable。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebRequestEx.cs" Line="11">'WebRequestEx.WebRequestEx()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;WebRequestEx..ctor()&#xD;&#xA;WebRequestEx.SetProxyInfo():Void&#xD;&#xA;WebRequest.set_Proxy(IWebProxy):Void。</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebRequestEx.cs" Line="11">'WebRequestEx.WebRequestEx()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;WebRequestEx..ctor()&#xD;&#xA;WebRequestEx.SetProxyInfo():Void&#xD;&#xA;WebRequest.set_Proxy(IWebProxy):Void&#xD;&#xA;WebRequest.get_Proxy():IWebProxy。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WebServiceProxy" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Create(System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="69">'WebServiceProxy.Create(string, string, string)' 调入具有 LinkDemand 的 'CodeDomProvider.CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])'。通过此调用，'CodeDomProvider.CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'&#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="69">'WebServiceProxy.Create(string, string, string)' 调入具有 LinkDemand 的 'CompilerParameters.GenerateExecutable.set(bool)'。通过此调用，'CompilerParameters.GenerateExecutable.set(bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'&#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="69">'WebServiceProxy.Create(string, string, string)' 调入具有 LinkDemand 的 'CompilerParameters.GenerateInMemory.set(bool)'。通过此调用，'CompilerParameters.GenerateInMemory.set(bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'&#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="69">'WebServiceProxy.Create(string, string, string)' 调入具有 LinkDemand 的 'CompilerParameters.ReferencedAssemblies.get()'。通过此调用，'CompilerParameters.ReferencedAssemblies.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'&#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="69">'WebServiceProxy.Create(string, string, string)' 调入具有 LinkDemand 的 'ServiceDescriptionImporter.AddServiceDescription(ServiceDescription, string, string)'。通过此调用，'ServiceDescriptionImporter.AddServiceDescription(ServiceDescription, string, string)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'&#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="69">'WebServiceProxy.Create(string, string, string)' 调入具有 LinkDemand 的 'ServiceDescriptionImporter.Import(CodeNamespace, CodeCompileUnit)'。通过此调用，'ServiceDescriptionImporter.Import(CodeNamespace, CodeCompileUnit)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'&#xD;&#xA;   -&gt;'WebServiceProxy.Create(string, string, string)'</Issue>
+            </Message>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="129">'WebServiceProxy.Create(string, string, string)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invoke(System.String,System.String,System.String,System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="158">'WebServiceProxy.Invoke(string, string, string, string, object[])' 调入具有 LinkDemand 的 'CodeDomProvider.CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])'。通过此调用，'CodeDomProvider.CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'&#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="158">'WebServiceProxy.Invoke(string, string, string, string, object[])' 调入具有 LinkDemand 的 'CompilerParameters.GenerateExecutable.set(bool)'。通过此调用，'CompilerParameters.GenerateExecutable.set(bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'&#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="158">'WebServiceProxy.Invoke(string, string, string, string, object[])' 调入具有 LinkDemand 的 'CompilerParameters.GenerateInMemory.set(bool)'。通过此调用，'CompilerParameters.GenerateInMemory.set(bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'&#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="158">'WebServiceProxy.Invoke(string, string, string, string, object[])' 调入具有 LinkDemand 的 'CompilerParameters.ReferencedAssemblies.get()'。通过此调用，'CompilerParameters.ReferencedAssemblies.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'&#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="158">'WebServiceProxy.Invoke(string, string, string, string, object[])' 调入具有 LinkDemand 的 'ServiceDescriptionImporter.AddServiceDescription(ServiceDescription, string, string)'。通过此调用，'ServiceDescriptionImporter.AddServiceDescription(ServiceDescription, string, string)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'&#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="WebServiceProxy.cs" Line="158">'WebServiceProxy.Invoke(string, string, string, string, object[])' 调入具有 LinkDemand 的 'ServiceDescriptionImporter.Import(CodeNamespace, CodeCompileUnit)'。通过此调用，'ServiceDescriptionImporter.Import(CodeNamespace, CodeCompileUnit)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'&#xD;&#xA;   -&gt;'WebServiceProxy.Invoke(string, string, string, string, object[])'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ZipFile(System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ZipUtil.cs" Line="173">可以在方法 'ZipUtil.ZipFile(string, string, string)' 中多次释放对象 'ZipFile'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 173</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ZipUtil.cs" Line="173">可以在方法 'ZipUtil.ZipFile(string, string, string)' 中多次释放对象 'ZipFile'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 173</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ZipFileDictory(System.String,ICSharpCode.SharpZipLib.Zip.ZipOutputStream,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\Utility" File="ZipUtil.cs" Line="71">可以在方法 'ZipUtil.ZipFileDictory(string, ZipOutputStream, string)' 中多次释放对象 'fs'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 71</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>正确声明事件处理程序</Name>
+   <Description>按照约定，.NET 事件有两个参数，分别用于指定事件发送方和事件数据。事件处理程序签名应遵循以下形式: void MyEventHandler(object sender, EventArgs e)。“sender”参数的类型始终是 System.Object，即使该参数可能使用更具体的类型。“e”参数的类型始终是 System.EventArgs。不提供事件数据的事件应使用 System.EventHandler 委托类型。事件处理程序返回 void 以便将每个事件发送给多个目标方法。目标返回的任何值在第一次调用之后将会丢失。</Description>
+   <Resolution Name="First">将 {0} 的第一个参数声明为一个名为“sender”的对象。</Resolution>
+   <Resolution Name="Second">将 {0} 的第二个参数声明为 EventArgs，或者声明为扩展 EventArgs 的类型的名为“e”的实例。</Resolution>
+   <Resolution Name="TooMany">移除 {0} 的除前两个参数以外的所有参数。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DisposableTypesShouldDeclareFinalizer" Category="Microsoft.Usage" CheckId="CA2216">
+   <Name>可释放类型应声明终结器</Name>
+   <Description>如果某个类型实现 Dispose 方法并具有非托管资源，则它应当在没有显式调用 Dispose 的情况下提供 Finalize 方法。运行时在“垃圾回收”进程中回收对象的托管资源之前，先调用对象的 Finalize 方法或析构函数。Finalize 方法应在任何非托管资源变得不可访问之前释放它们。</Description>
+   <Resolution Name="Default">针对 {0} 实现终结器或析构函数。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182329.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>不要在构造函数中调用可重写的方法</Name>
+   <Description>不应通过构造函数调用类中定义的虚方法。如果某个派生类已重写该虚方法，则将在调用派生类的构造函数前，调用此派生类重写后的方法。</Description>
+   <Resolution Name="Default">{0} 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: {1}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+   <Name>不要使用链接请求间接公开方法</Name>
+   <Description>不要使用不执行安全性检查的方法来包装受 LinkDemand 保护的方法。LinkDemand 检查直接调用方的权限而不是调用堆栈中所有调用方的权限。在这种情况下，将检查包装器方法的权限。如果包装器方法本身不检查调用堆栈中位置较高的调用方的权限，则尽管恶意代码没有足够的权限，但它仍可能能够执行被包装的函数。</Description>
+   <Resolution Name="Default">{0} 调入具有 LinkDemand 的 {1}。通过此调用，{1} 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: {2}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182303.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>正确实现 IDisposable</Name>
+   <Description>所有 IDisposable 类型都应正确实现 Dispose 模式。</Description>
+   <Resolution Name="DisposeImplementation">修改 {0}，使它先调用 Dispose(true)，然后对当前对象实例(在 Visual Basic 中为“this”或“Me”)调用 GC.SuppressFinalize，最后返回。</Resolution>
+   <Resolution Name="ProvideDisposeBool">对 {0} 提供 Dispose(bool) 的可重写实现或将该类型标记为密封。对 Dispose(false) 的调用应仅清理本机资源。对 Dispose(true) 的调用应既清理托管资源又清理本机资源。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>用 SerializableAttribute 标记 ISerializable 类型</Name>
+   <Description>System.Runtime.Serialization.ISerializable 接口允许该类型自定义自身的序列化，而 Serializable 特性使运行时能够将该类型识别为可序列化的类型。</Description>
+   <Resolution Name="Default">将 [Serializable] 添加到 {0}，原因是此类型实现了 ISerializable。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>将 P/Invoke 移动到 NativeMethods 类</Name>
+   <Description>此类型包含具有 DllImport 特性的成员。具有 DllImport 特性的成员应包含在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中。</Description>
+   <Resolution Name="Default">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 {0}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123">
+   <Name>重写链接请求应与基相同</Name>
+   <Description>在很多情况下，如果一个虚方法具有 LinkDemand，则它的任何重写方法都应具有 LinkDemand，同样，如果一个重写方法具有 LinkDemand，则被重写的虚方法也应具有 LinkDemand。由于调用方可能显式调用虚方法的任何重写方法，因此这些方法应具有相同的 LinkDemand 状态，否则应检查它们。由于调用方可能使用接口类型的引用来访问方法，因此上述规则也适用于对属于接口实现的方法进行的 LinkDemand 安全性检查。</Description>
+   <Resolution Name="BaseOnly">向 {0} 添加下列安全特性以匹配基方法 {1} 上的 LinkDemand: {2}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182305(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke 声明应为可移植声明</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">如代码中所声明的，P/Invoke {1} 的参数 {0} 在 {3} 平台上的字节宽度将为 {2}。这是不正确的，因为此 API 的实际本机声明表明该参数在 {3} 平台上的字节宽度应为 {4}。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 {5}。</Resolution>
+   <Resolution Name="Return">如代码中所声明的，P/Invoke {0} 的返回类型在 {2} 平台上的字节宽度将为 {1}。这是不正确的，因为此 API 的实际本机声明表明该返回类型在 {2} 平台上的字节宽度应为 {3}。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 {4}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invokes 应该是不可见的</Name>
+   <Description>互操作层不应该是公共的。DllImport 特性不应该应用于可公开访问的成员(公共成员或受保护的成员)。</Description>
+   <Resolution Name="Default">更改 P/Invoke {0} 的可访问性，使它在自己的程序集外部不再是可见的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111">
+   <Name>指针应为不可见</Name>
+   <Description>应将 IntPtr 和 UIntPtr 字段声明为私有。公开非私有指针可能会导致安全漏洞。</Description>
+   <Resolution Name="Default">将 {0} 设置为私有的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182306.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>再次引发以保留堆栈详细信息</Name>
+   <Description>重复引发捕获的异常时，请使用 IL 再次引发指令保留原始堆栈详细信息。</Description>
+   <Resolution Name="Default">{0} 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>指定对 P/Invoke 字符串参数进行封送处理</Name>
+   <Description>在将字符串封送为 ANSI (在 Win9x 上为 Auto)时，某些字符可能会改变。如果启用了最佳匹配映射，则采用 Unicode 编码时显示样式不同的字符串将封送到相同的 ANSI 字符串，这可能会导致错误的安全决策。禁用最佳匹配映射会降低此风险，因为所有没有等效项的字符都将映射到“?”。另外，请注意，CharSet.Ansi 是所有字符串的默认封送设置；Unicode 封送必须显式指定为 DllImport 或 StructLayout 的 CharSet 设置，或者指定为具有 Unicode (或与系统相关的) UnmanagedType 的 MarshalAs 特性。</Description>
+   <Resolution Name="Parameter">为了降低安全风险，请将参数 {0} 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode 或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或与系统相关的编码，请设置 BestFitMapping=false；为了提高安全性，还可以设置 ThrowOnUnmappableChar=true。</Resolution>
+   <Resolution Name="ParameterImplicitAnsi">为了降低安全风险，请将参数 {0} 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>具有可释放字段的类型应该是可释放的</Name>
+   <Description>声明可释放成员的类型也应实现 IDisposable。如果该类型没有任何非托管资源，请不要在其上实现终结器。</Description>
+   <Resolution Name="DependsOnFix">在 {0} 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: {1}。如果以前提供过 {0}，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049">
+   <Name>拥有本机资源的类型应是可释放的</Name>
+   <Description>分配非托管资源的类型应实现 IDisposable，以便允许调用方根据需要释放这些资源。如果不能实现 IDisposable，则将导致非托管资源不可用或利用不足。</Description>
+   <Resolution Name="Default">在 {0} 上实现 IDisposable。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182173.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 173</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

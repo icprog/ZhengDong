@@ -1,0 +1,9 @@
+14:36:50.782  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\项目源码\FishSolution\FishBLL\MySqlHelper.cs:行号 343
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\练习\项目源码\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishBll.Bll.RemindBll.GetRemind(String where) 位置 D:\练习\项目源码\FishSolution\FishBLL\Bll\RemindBll.cs:行号 12
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\练习\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 81
+16:06:40.161  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\项目源码\FishSolution\FishClient\UserManager.cs:行号 133
+16:09:26.060  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\项目源码\FishSolution\FishClient\UserManager.cs:行号 133

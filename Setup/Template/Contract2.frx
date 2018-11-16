@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/07/2015 10:29:39" ReportInfo.Modified="06/20/2015 13:36:52" ReportInfo.CreatorVersion="2014.2.3.0">
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqmmfdjkQxfe1iwShBNGpud4lXXiVOgYDr9QS77T6q5p92OVRbhWjC5OlWrhEjz2uh+fo7hzWISn8TPsCx09rSNBNKrwnyf3sBREz1TlCR8BFU7ICU1n4WZ3IM1+4SdvYl">
+      <TableDataSource Name="contractdetail" DataType="System.Int32" Enabled="true" TableName="contractdetail">
+        <Column Name="specification" DataType="System.String"/>
+        <Column Name="no" DataType="System.String"/>
+        <Column Name="productname" DataType="System.String"/>
+        <Column Name="weight" DataType="System.String"/>
+        <Column Name="quantity" DataType="System.String"/>
+        <Column Name="unitprice" DataType="System.String"/>
+        <Column Name="money" DataType="System.String"/>
+      </TableDataSource>
+    </XmlDataConnection>
+    <Parameter Name="contractid" DataType="System.String"/>
+    <Parameter Name="type" DataType="System.String"/>
+    <Parameter Name="contractno" DataType="System.String"/>
+    <Parameter Name="signdate" DataType="System.String"/>
+    <Parameter Name="storagefee" DataType="System.String"/>
+    <Parameter Name="signaddress" DataType="System.String"/>
+    <Parameter Name="money" DataType="System.String"/>
+    <Parameter Name="yifangcode" DataType="System.String"/>
+    <Parameter Name="yifang" DataType="System.String"/>
+    <Parameter Name="yiduanzhuang" DataType="System.String"/>
+    <Parameter Name="check1" DataType="System.String"/>
+    <Parameter Name="check2" DataType="System.String"/>
+    <Parameter Name="check3" DataType="System.String"/>
+    <Parameter Name="deliverytime" DataType="System.String"/>
+    <Parameter Name="address" DataType="System.String"/>
+    <Parameter Name="package" DataType="System.String"/>
+    <Parameter Name="date1" DataType="System.String"/>
+    <Parameter Name="date2" DataType="System.String"/>
+    <Parameter Name="date3" DataType="System.String"/>
+    <Parameter Name="bank" DataType="System.String"/>
+    <Parameter Name="bankaccount" DataType="System.String"/>
+    <Parameter Name="resolve" DataType="System.String"/>
+    <Parameter Name="time1" DataType="System.String"/>
+    <Parameter Name="time2" DataType="System.String"/>
+    <Parameter Name="time3" DataType="System.String"/>
+    <Parameter Name="time4" DataType="System.String"/>
+    <Parameter Name="maifangcode" DataType="System.String"/>
+    <Parameter Name="maifang" DataType="System.String"/>
+    <Parameter Name="maifangaddress" DataType="System.String"/>
+    <Parameter Name="maifangtelephone" DataType="System.String"/>
+    <Parameter Name="maifangfox" DataType="System.String"/>
+    <Parameter Name="yifangaddress" DataType="System.String"/>
+    <Parameter Name="yifangtelephone" DataType="System.String"/>
+    <Parameter Name="yifangfox" DataType="System.String"/>
+    <Parameter Name="saleman" DataType="System.String"/>
+    <Parameter Name="salemanid" DataType="System.String"/>
+    <Parameter Name="moneydaxie" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page1" RawPaperSize="9" FirstPageSource="15" OtherPagesSource="15">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="202.23">
+      <TextObject Name="Text11" Left="179.55" Top="18.9" Width="330.75" Height="26.46" Text="销售合同（先款后货）" HorzAlign="Center" VertAlign="Center" Font="宋体, 14pt"/>
+      <TextObject Name="Text12" Left="18.9" Top="56.7" Width="245.7" Height="18.9" Text="卖方：" Font="宋体, 12pt"/>
+      <TextObject Name="Text17" Left="340.2" Top="85.05" Width="302.4" Height="18.9" Text="签约时间：" Font="宋体, 12pt"/>
+      <TextObject Name="Text19" Left="340.2" Top="113.4" Width="302.4" Height="18.9" Text="签约地点：" Font="宋体, 12pt"/>
+      <TextObject Name="Text15" Left="340.2" Top="56.7" Width="302.4" Height="18.9" Text="合同编号：" Font="宋体, 12pt"/>
+      <TextObject Name="Text16" Left="9.45" Top="160.65" Width="500.85" Height="18.9" Text="一、产品名称、出厂规格、数量、单价、总金额及溢短量：" VertAlign="Center" Font="宋体, 10pt"/>
+      <LineObject Name="Line1" Left="66.15" Top="75.6" Width="198.45"/>
+      <LineObject Name="Line2" Left="66.15" Top="103.95" Width="198.45"/>
+      <LineObject Name="Line3" Left="415.8" Top="103.95" Width="226.8"/>
+      <LineObject Name="Line4" Left="415.8" Top="132.3" Width="226.8"/>
+      <TextObject Name="Text13" Left="18.9" Top="85.05" Width="245.7" Height="18.9" Text="买方：" Font="宋体, 12pt"/>
+      <TableObject Name="Table1" Left="18.9" Top="179.55" Width="689.85" Height="22.68" Border.Lines="All">
+        <TableColumn Name="Column1" Width="58.05"/>
+        <TableColumn Name="Column2" Width="180.9"/>
+        <TableColumn Name="Column3" Width="95.85"/>
+        <TableColumn Name="Column4" Width="95.85"/>
+        <TableColumn Name="Column5" Width="67.5"/>
+        <TableColumn Name="Column6" Width="114.75"/>
+        <TableColumn Name="Column7" Width="76.95"/>
+        <TableRow Name="Row1" Height="22.68">
+          <TableCell Name="Cell1" Border.Lines="All" Text="序号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="产品名称" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="品质规格" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell4" Border.Lines="All" Text="重量(吨)" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell5" Border.Lines="All" Text="数量(件)" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell26" Border.Lines="All" Text="含税单价(元/吨)" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell27" Text="总金额(元)" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <LineObject Name="Line5" Left="415.8" Top="75.6" Width="226.8"/>
+      <TextObject Name="Text18" Left="9.45" Top="141.75" Width="680.4" Height="18.9" Text="依照《中华人民共和国合同法》，甲乙双方经友好协商一致，就鱼粉产品的购销达成以下协议,以兹信守。" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="206.4" Width="718.2">
+      <PictureObject Name="Picture1" Left="-9450" Top="-9450" Width="122.85" Height="47.25"/>
+      <TextObject Name="Text1" Left="-9261" Top="-9450" Width="189" Height="18.9" Text="上海正东饲料有限公司" Font="宋体, 12pt"/>
+      <TextObject Name="Text2" Left="-9223.2" Top="-9431.1" Width="94.5" Height="18.9" Text="提货单" Font="宋体, 12pt"/>
+      <TextObject Name="Text3" Left="-9450" Top="-9402.75" Width="94.5" Height="18.9" Text="签发时间：" Font="宋体, 12pt"/>
+      <TextObject Name="Text4" Left="-9355.5" Top="-9402.75" Width="94.5" Height="18.9" Font="宋体, 12pt"/>
+      <TextObject Name="Text5" Left="-9450" Top="-9383.85" Width="94.5" Height="18.9" Text="提货单位：" Font="宋体, 12pt"/>
+      <TextObject Name="Text6" Left="-9355.5" Top="-9383.85" Width="94.5" Height="18.9" Font="宋体, 12pt"/>
+      <TextObject Name="Text7" Left="-9128.7" Top="-9412.2" Width="94.5" Height="18.9" Text="编号：" Font="宋体, 12pt"/>
+      <TextObject Name="Text8" Left="-9034.2" Top="-9412.2" Width="94.5" Height="18.9" Font="宋体, 12pt"/>
+      <TextObject Name="Text9" Left="-9128.7" Top="-9393.3" Width="94.5" Height="18.9" Text="仓库：" Font="宋体, 12pt"/>
+      <TextObject Name="Text10" Left="-9034.2" Top="-9393.3" Width="94.5" Height="18.9" Font="宋体, 12pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="210.56" Width="718.2" Height="18.9" DataSource="contractdetail">
+      <TableObject Name="Table2" Left="18.9" Width="689.84" Height="18.9" Border.Lines="All">
+        <TableColumn Name="Column8" Width="58.21"/>
+        <TableColumn Name="Column9" Width="181.06"/>
+        <TableColumn Name="Column10" Width="96.01"/>
+        <TableColumn Name="Column11" Width="96.01"/>
+        <TableColumn Name="Column12" Width="68.04"/>
+        <TableColumn Name="Column13" Width="113.4"/>
+        <TableColumn Name="Column14" Width="77.11"/>
+        <TableRow Name="Row2">
+          <TableCell Name="Cell28" Border.Lines="All" Text="[contractdetail.no]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell29" Border.Lines="All" Text="[contractdetail.productname]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell30" Border.Lines="All" Text="[contractdetail.specification]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell31" Border.Lines="All" Text="[contractdetail.weight]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell32" Border.Lines="All" Text="[contractdetail.quantity]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell33" Border.Lines="All" Text="[contractdetail.unitprice]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell34" Text="[contractdetail.money]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="237.8" Width="718.2" Height="661.5">
+      <TextObject Name="Text21" Left="9.45" Width="661.5" Height="18.9" Text="总金额（大写）[moneydaxie]" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text22" Left="9.45" Top="18.9" Width="661.5" Height="18.9" Text="溢短装  合同数量[yiduanzhuang]的溢短量由卖方决定" Font="宋体, 10pt"/>
+      <TextObject Name="Text28" Left="9.45" Top="94.5" Width="302.4" Height="18.9" Text="三、交货地点，验收方法：&#13;&#10;" Font="宋体, 10pt"/>
+      <TextObject Name="Text29" Left="9.45" Top="37.8" Width="94.5" Height="18.9" Text="二、质量标准：" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text31" Left="9.45" Top="113.4" Width="689.85" Height="28.35" Text="1、[address]，货场在装货前买方检验合格后装车，货物的装车视为买方接受该货物实际品质。买方不得以货物质量的原因推延、拒绝向卖方付款或索赔。" Font="宋体, 9pt"/>
+      <TextObject Name="Text32" Left="9.45" Top="141.75" Width="415.8" Height="18.9" Text="四、提货时间： [deliverytime]" Font="宋体, 9pt"/>
+      <TextObject Name="Text35" Left="9.45" Top="151.2" Width="425.25" Height="18.9" Text="五、包装：编织袋包装，约[package]公斤/袋，以毛作净。" Font="宋体, 9pt"/>
+      <TextObject Name="Text36" Left="9.45" Top="170.1" Width="444.15" Height="18.9" Text="六、货物计量：结算重量以实际交货仓库出库磅单为准。" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text39" Left="9.45" Top="189" Width="472.5" Height="18.9" Text="六、货款结算：电汇，先付款后提货。买方需于[date1]付清合同项下全部货款。" Font="宋体, 9pt"/>
+      <TextObject Name="Text43" Left="9.45" Top="207.9" Width="661.5" Height="18.9" Text="1. 买方应于[date2]支付全款并在合同规定日期内提清货物（[date3]）。	" Font="宋体, 9pt"/>
+      <TextObject Name="Text44" Left="9.45" Top="226.8" Width="652.05" Height="18.9" Text="2.卖方收款基本信息： 卖方收款行：[bank]  卖方收款账号：[bankaccount]" Font="宋体, 9pt"/>
+      <TextObject Name="Text45" Left="9.45" Top="245.7" Width="680.4" Height="18.9" Text="七、增值税税票 买方提货完毕后，卖方需向买方开具实际货款金额相应的税率为0%的增值税普通发票。" Font="宋体, 9pt"/>
+      <TextObject Name="Text46" Left="9.45" Top="264.6" Width="94.5" Height="18.9" Text="八、违约责任：" Font="宋体, 9pt"/>
+      <TextObject Name="Text47" Left="9.45" Top="283.5" Width="689.85" Height="122.85" Text="1、若买方逾期支付卖方定金、货款及相应款项的，应自逾期付款之日起按逾期付款金额以日万分之五（不含税）标准卖供方支付逾期付款违约金，自第31日起改按日千分之一（不含税）标准给付。同时，卖方有权全部或部分解除合同，转售全部或部分货物，所得款项抵作卖方应付的任何款项，不足部分由买方另行支付。“若遇中国人民银行调整金融机构人民币一年期贷款基准利率，乙方有权调整该合同逾期利息标准”&#13;&#10;2、买方付清货款之日起7日内应提清货物，若逾期其所产生的一切风险及费用由买方承担；&#13;&#10;3、卖方将拟转售货物的价格、数量等信息通知买方之日起壹日内买方未提出书面异议或者虽提出异议但未以该价格来款提货并补足该价格与本合同价格间差额的，卖方的转售价格视为合理的销售价格。但本条款不得理解为卖方承担货物转售前告知买方转售价格的义务。&#13;&#10;4、违约方应承担守约方为追究其违约责任而支出的费用，包括但不限于诉讼费用、律师费用、差旅费用等。" Font="宋体, 9pt"/>
+      <TextObject Name="Text48" Left="9.45" Top="406.35" Width="689.85" Height="18.9" Text="九、争议解决方式：由买卖双方协商解决，协商不成则提交合同签约地[resolve]有管辖权的人民法院诉讼解决。" Font="宋体, 9pt"/>
+      <TextObject Name="Text49" Left="9.45" Top="425.25" Width="217.35" Height="18.9" Text="十、其他约定事项：" Font="宋体, 9pt"/>
+      <TextObject Name="Text50" Left="9.45" Top="444.15" Width="689.85" Height="103.95" Text="1、卖方于当日12:00之前将此合同以传真方式通知买方的，买方于当日下午5:30之前盖章回传有效；卖方于当日12:00之后将此合同以传真方式通知买方的，买方于次日上午11:30之前盖章回传有效；&#13;&#10;2、卖方在本协议约定的交货地点将货物交付买方时起货物风险由买方承担，买方逾期提货（含货权转移）情况下货物风险自本协议约定的交货时间起转移至买方承担。&#13;&#10;3、本协议自双方签订之日起生效，一式两份，双方各执一份，具有同等法律效力。传真件有效。&#13;&#10;4、任何对本合同条款的变更、修改均须双方签订书面的修改书。变更后的内容与本合同（被修改部分除外）具有同等法律效力。" Font="宋体, 9pt"/>
+      <TextObject Name="Text51" Left="56.7" Top="548.1" Width="311.85" Height="18.9" Text="卖方：[maifang]" Font="宋体, 9pt"/>
+      <TextObject Name="Text52" Left="56.7" Top="567" Width="94.5" Height="18.9" Text="盖章：" Font="宋体, 9pt"/>
+      <TextObject Name="Text53" Left="56.7" Top="585.9" Width="311.85" Height="18.9" Text="住所：[maifangaddress]" Font="宋体, 9pt"/>
+      <TextObject Name="Text54" Left="56.7" Top="604.8" Width="311.85" Height="18.9" Text="电话：[maifangtelephone]" Font="宋体, 9pt"/>
+      <TextObject Name="Text56" Left="378" Top="548.1" Width="321.3" Height="18.9" Text="买方：[yifang]" Font="宋体, 9pt"/>
+      <TextObject Name="Text57" Left="378" Top="567" Width="94.5" Height="18.9" Text="盖章：" Font="宋体, 9pt"/>
+      <TextObject Name="Text58" Left="378" Top="585.9" Width="321.3" Height="18.9" Text="住所：[yifangaddress]" Font="宋体, 9pt"/>
+      <TextObject Name="Text59" Left="378" Top="604.8" Width="321.3" Height="18.9" Text="电话：[yifangtelephone]" Font="宋体, 9pt"/>
+      <TextObject Name="Text55" Left="56.7" Top="633.15" Width="311.85" Height="18.9" Text="传真：[maifangfox]" Font="宋体, 9pt"/>
+      <TextObject Name="Text60" Left="378" Top="633.15" Width="321.3" Height="18.9" Text="传真：[yifangfox]" Font="宋体, 9pt"/>
+      <TextObject Name="Text61" Left="18.9" Top="56.7" Width="689.85" Height="28.35" Text="1、以第三方检验机构 [check1]  的检测指标为标准：[check2]。&#13;&#10;2、其它质量指标：[check3]" Font="宋体, 9pt"/>
+    </ReportSummaryBand>
+    <ColumnFooterBand Name="ColumnFooter1" Top="233.63" Width="718.2"/>
+  </ReportPage>
+</Report>

@@ -1,0 +1,18 @@
+09:32:53.466  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:32:57.806  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:33:02.172  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:33:27.785  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:34:16.472  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:34:23.603  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:34:31.135  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+09:37:40.170  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133
+13:24:40.258  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\Project data\zhengdong\FishClient\UserManager.cs:行号 133

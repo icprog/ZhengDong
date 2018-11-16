@@ -1,0 +1,5 @@
+15:32:03.775  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\项目源码\FishSolution\FishBLL\MySqlHelper.cs:行号 343
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\练习\项目源码\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishBll.Bll.RemindBll.GetRemind(String where) 位置 D:\练习\项目源码\FishSolution\FishBLL\Bll\RemindBll.cs:行号 12
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\练习\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 81

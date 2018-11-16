@@ -1,0 +1,459 @@
+09:11:12.463  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:12:17.552  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:13:22.558  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:14:22.612  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:15:22.619  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:16:22.626  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:20:33.353  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:21:38.361  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:22:43.366  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:23:48.371  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:28:59.879  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:44:05.107  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:45:10.111  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:46:15.117  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:47:20.121  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+09:48:25.124  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+10:11:35.734  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+10:13:10.532  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.FormRemind.Query() 位置 D:\练习\FishSolution\FishClient\FormRemind.cs:行号 35
+   在 FishClient.FormRemind..ctor() 位置 D:\练习\FishSolution\FishClient\FormRemind.cs:行号 28
+   在 FishClient.FormMain.ShowPushMessageForm() 位置 D:\练习\FishSolution\FishClient\FormMain.cs:行号 185
+10:21:32.793  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+10:37:45.323  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+10:46:55.936  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+10:48:00.941  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:11:06.972  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:12:11.974  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:13:16.978  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:14:21.982  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:15:26.986  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:16:31.990  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:17:36.994  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:31:48.430  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+11:44:59.144  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:43:39.914  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:44:50.436  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:45:55.440  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:47:00.444  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:48:05.448  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:49:10.451  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:52:21.844  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:53:26.849  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:54:31.854  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:55:36.859  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:56:41.864  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:57:46.868  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:58:51.872  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:59:56.877  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:00:56.882  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:02:01.887  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:03:01.892  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:04:01.895  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:05:01.899  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:06:01.903  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:07:01.912  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:08:01.915  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:09:01.918  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:10:01.922  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:11:01.926  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:12:01.929  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:13:01.936  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:14:01.939  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:15:01.942  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:16:01.947  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:17:01.953  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:18:01.961  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:19:01.971  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:20:01.976  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:21:01.980  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:22:01.982  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:23:01.987  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:24:01.991  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:25:01.994  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:26:01.998  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:27:02.001  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:28:02.008  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:29:02.015  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:30:02.021  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:36:12.726  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:37:17.730  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:38:22.735  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:39:27.738  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+13:40:32.742  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:02:41.566  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:11:52.314  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:12:57.315  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:22:08.877  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:23:13.882  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:24:18.885  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:35:32.595  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:36:37.600  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:37:42.603  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:38:47.609  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:39:52.613  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+15:40:57.618  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85

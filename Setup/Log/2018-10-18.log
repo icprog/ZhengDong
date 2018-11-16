@@ -1,0 +1,35 @@
+14:13:16.330  异常信息：名称不能以“<”字符(十六进制值 0x3C)开头。 行 9，位置 2。
+  堆栈信息:   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   在 System.Xml.XmlTextReaderImpl.ParseElement()
+   在 System.Xml.XmlTextReaderImpl.ParseElementContent()
+   在 System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   在 System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\ProjectData\zhengdong\zhengdong_\FishClient\UserManager.cs:行号 123
+14:13:16.358  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\ProjectData\zhengdong\zhengdong_\FishClient\UserManager.cs:行号 133
+14:13:20.230  异常信息：名称不能以“<”字符(十六进制值 0x3C)开头。 行 9，位置 2。
+  堆栈信息:   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   在 System.Xml.XmlTextReaderImpl.ParseElement()
+   在 System.Xml.XmlTextReaderImpl.ParseElementContent()
+   在 System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   在 System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\ProjectData\zhengdong\zhengdong_\FishClient\UserManager.cs:行号 123
+14:27:21.391  异常信息：error connecting: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+  堆栈信息:   在 FishBll.MySqlHelper.ExecuteReader(String strSQL) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 297
+   在 FishBll.MySqlHelper.SaveLog(String cmdText, Object[] cmdParms) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 1062
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 862
+17:51:47.857  异常信息：Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 328
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\Dao\SetReviewDao.cs:行号 522
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\Bll\SetReviewBll.cs:行号 60
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\ProjectData\zhengdong\zhengdong_\FishClient\AnnouncementRemindThread.cs:行号 85
+18:22:10.302  异常信息：error connecting: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+  堆栈信息:   在 FishBll.MySqlHelper.ExecuteReader(String strSQL) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 297
+   在 FishBll.MySqlHelper.SaveLog(String cmdText, Object[] cmdParms) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 1062
+   在 FishBll.MySqlHelper.ExecuteSqlTran(Hashtable SQLStringList) 位置 D:\ProjectData\zhengdong\zhengdong_\FishBLL\MySqlHelper.cs:行号 862

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Files>
+  <description>1:更新壳界面，新增快捷键功能</description>
+  <Count>4</Count>
+  <remarks />
+  <File Name="TCHISShell.exe" />
+  <File Name="TCSkinForm.dll" />
+  <File Name="TCUILibrary.dll" />
+  <File Name="Log/2013-06-18.log"/>
+</Files>

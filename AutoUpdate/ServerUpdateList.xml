@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AutoUpdater>
+  <Description>Application autoUpdate</Description>
+  <Updater>
+    <Url>http://10.1.18.135/TCHIS/clientupdate/</Url>
+    <LastUpdateTime>2013-06-18</LastUpdateTime>
+  </Updater>
+  <Application applicationId="TCHISClient">
+    <EntryPoint>TCHISClient.exe</EntryPoint>
+    <Location>.</Location>
+    <Version>1</Version>
+  </Application>
+  <Dir>
+    <File ver="13.06.18.01" value="1" sysifuse="1" updateflag="1"/>
+    <File ver="13.06.18.02" value="2" sysifuse="1" updateflag="1"/>
+    <File ver="13.06.19.01" value="3" sysifuse="1" updateflag="1"/>
+    <File ver="13.06.19.02" value="4" sysifuse="1" updateflag="1"/>
+    <File ver="13.06.20.01" value="5" sysifuse="1" updateflag="1"/>    
+  </Dir>
+</AutoUpdater>

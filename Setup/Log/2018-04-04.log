@@ -1,0 +1,54 @@
+10:26:06.525  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:28:01.248  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:33:51.723  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:33:54.407  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:33:56.977  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:33:57.151  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:33:59.202  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:16.788  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:27.629  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:27.942  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:28.102  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:28.315  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:28.504  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:28.757  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:28.898  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:29.066  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+11:34:35.203  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+12:02:58.347  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 520
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 60
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:04:03.351  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 520
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 60
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+12:08:42.831  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\练习\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishBll.Bll.RemindBll.GetRemind(String where) 位置 D:\练习\FishSolution\FishBLL\Bll\RemindBll.cs:行号 12
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\练习\FishSolution\FishClient\AnnouncementThread.cs:行号 81
+12:08:48.826  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 520
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 60
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85

@@ -1,0 +1,6 @@
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCSkinForm.dll
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCSkinForm.pdb
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCSkinForm\obj\Debug\TCSkinForm.SkinPictureForm.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCSkinForm\obj\Debug\TCSkinForm.csproj.GenerateResource.Cache
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCSkinForm\obj\Debug\TCSkinForm.dll
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCSkinForm\obj\Debug\TCSkinForm.pdb

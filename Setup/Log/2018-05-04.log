@@ -1,0 +1,10 @@
+16:00:00.299  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\UserManager.cs:行号 133
+20:41:17.444  异常信息：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('删除','DELETE FROM t_presalerequisition WHERE id=31','预售申请单' at line 1
+  堆栈信息:   在 FishBll.MySqlHelper.ExecuteReader(String strSQL) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 297
+   在 FishBll.MySqlHelper.SaveLog(String cmdText) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 988
+   在 FishBll.MySqlHelper.ExecuteSqlTranBool(ArrayList SQLStringList) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 953
+20:43:39.464  异常信息：Fatal error encountered during command execution.
+  堆栈信息:   在 FishBll.MySqlHelper.ExecuteReader(String strSQL) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 297
+   在 FishBll.MySqlHelper.SaveLog(String cmdText, Object[] cmdParms) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 1050
+   在 FishBll.MySqlHelper.ExecuteSql(String SQLString, Object[] cmdParms) 位置 C:\Users\Administrator\Desktop\zhengdong\FishBLL\MySqlHelper.cs:行号 406

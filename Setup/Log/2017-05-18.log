@@ -1,0 +1,5 @@
+13:08:07.068  异常信息：Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\项目源码 - 副本 (3)\FishSolution\FishBLL\MySqlHelper.cs:行号 346
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\练习\项目源码 - 副本 (3)\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishBll.Bll.RemindBll.GetRemind(String where) 位置 D:\练习\项目源码 - 副本 (3)\FishSolution\FishBLL\Bll\RemindBll.cs:行号 12
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\练习\项目源码 - 副本 (3)\FishSolution\FishClient\AnnouncementThread.cs:行号 81

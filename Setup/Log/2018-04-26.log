@@ -1,0 +1,12 @@
+16:53:25.093  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.FormRemind.Query() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormRemind.cs:行号 34
+   在 FishClient.FormRemind..ctor() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormRemind.cs:行号 27
+   在 FishClient.FormMain.ShowPushMessageForm() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormMain.cs:行号 188
+16:55:47.884  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.FormRemind.Query() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormRemind.cs:行号 34
+   在 FishClient.FormRemind..ctor() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormRemind.cs:行号 27
+   在 FishClient.FormMain.ShowPushMessageForm() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormMain.cs:行号 188
+17:25:55.242  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.FormRemind.Query() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormRemind.cs:行号 34
+   在 FishClient.FormRemind..ctor() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormRemind.cs:行号 27
+   在 FishClient.FormMain.ShowPushMessageForm() 位置 C:\Users\Administrator\Desktop\zhengdong\FishClient\FormMain.cs:行号 188

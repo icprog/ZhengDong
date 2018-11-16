@@ -1,0 +1,128 @@
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\Setup\AutoUpdate.exe.config
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\Setup\AutoUpdate.exe
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\Setup\AutoUpdate.pdb
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\Setup\AutoUpdate.exe.config
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\Setup\AutoUpdate.exe
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\Setup\AutoUpdate.pdb
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\Setup\AutoUpdate.exe.config
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\Setup\AutoUpdate.exe
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\Setup\AutoUpdate.pdb
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+D:\练习\项目源码\FishSolution\Setup\AutoUpdate.exe.config
+D:\练习\项目源码\FishSolution\Setup\AutoUpdate.exe
+D:\练习\项目源码\FishSolution\Setup\AutoUpdate.pdb
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+D:\练习\项目源码\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+D:\练习\项目源码 - 副本 (3)\FishSolution\Setup\AutoUpdate.exe.config
+D:\练习\项目源码 - 副本 (3)\FishSolution\Setup\AutoUpdate.exe
+D:\练习\项目源码 - 副本 (3)\FishSolution\Setup\AutoUpdate.pdb
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+D:\练习\项目源码 - 副本 (3)\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\Setup\AutoUpdate.exe.config
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\Setup\AutoUpdate.exe
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\Setup\AutoUpdate.pdb
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+D:\练习\FishSolution\FishSolution\Setup\AutoUpdate.exe.config
+D:\练习\FishSolution\FishSolution\Setup\AutoUpdate.exe
+D:\练习\FishSolution\FishSolution\Setup\AutoUpdate.pdb
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+D:\练习\FishSolution\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+D:\练习\FishSolution\Setup\AutoUpdate.exe.config
+D:\练习\FishSolution\Setup\AutoUpdate.exe
+D:\练习\FishSolution\Setup\AutoUpdate.pdb
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+D:\练习\FishSolution - 副本\Setup\AutoUpdate.exe.config
+D:\练习\FishSolution - 副本\Setup\AutoUpdate.exe
+D:\练习\FishSolution - 副本\Setup\AutoUpdate.pdb
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+D:\练习\FishSolution - 副本\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+D:\练习\FishSolution\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\Setup\AutoUpdate.exe.config
+C:\Users\Administrator\Desktop\新建文件夹\Setup\AutoUpdate.exe
+C:\Users\Administrator\Desktop\新建文件夹\Setup\AutoUpdate.pdb
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+C:\Users\Administrator\Desktop\新建文件夹\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb
+C:\Users\Administrator\Desktop\zhengdong\Setup\AutoUpdate.exe.config
+C:\Users\Administrator\Desktop\zhengdong\Setup\AutoUpdate.exe
+C:\Users\Administrator\Desktop\zhengdong\Setup\AutoUpdate.pdb
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.ConfirmControl.resources
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.FormMain.resources
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.StartControl.resources
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.UpdateControl.resources
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+C:\Users\Administrator\Desktop\zhengdong\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb

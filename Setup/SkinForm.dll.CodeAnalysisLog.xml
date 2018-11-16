@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Administrator\Desktop\zhengdong\Setup\SkinForm.dll">
+   <Modules>
+    <Module Name="skinform.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">用强名称密钥对 'SkinForm.dll' 进行签名。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">使用 CLSCompliant(true)来标记 'SkinForm.dll'，因为它公开外部可见的类型。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttribute" Certainty="95" Level="CriticalError">因为 'SkinForm.dll' 公开外部可见的类型，请在程序集级别使用 ComVisible(false)来标记它，然后使用 ComVisible(true)来标记该程序集内应当向 COM 客户端公开的所有类型。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">由于程序集 'SkinForm.dll' 包含基于 ResX 的资源文件，因此请使用 NeutralResourcesLanguage 特性来标记它，并指定该程序集内的资源所采用的语言。这会改进首次检索资源时的查找性能。</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="SkinForm">
+       <Types>
+        <Type Name="AntiAliasGraphics" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">对 'AntiAliasGraphics' 提供 Dispose(bool) 的可重写实现或将该类型标记为密封。对 Dispose(false) 的调用应仅清理本机资源。对 Dispose(true) 的调用应既清理托管资源又清理本机资源。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(System.Drawing.Graphics)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="AntiAliasGraphics.cs" Line="24">在外部可见方法 'AntiAliasGraphics.AntiAliasGraphics(Graphics)' 中，请在使用参数“graphics”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="NotCalled" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="AntiAliasGraphics.cs" Line="31">将 'AntiAliasGraphics.Dispose()' 更改为调用 'GC.SuppressFinalize(object)'。这将使引入终结器的派生类型无需重新实现“IDisposable”即可调用它。</Issue>
+            </Message>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="AntiAliasGraphics.cs" Line="31">修改 'AntiAliasGraphics.Dispose()'，使它先调用 Dispose(true)，然后对当前对象实例(在 Visual Basic 中为“this”或“Me”)调用 GC.SuppressFinalize，最后返回。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ControlBoxManager" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#ProcessMouseMove(System.Drawing.Point,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlBoxManager.cs" Line="281">'ControlBoxManager.ProcessMouseMove(Point, Rectangle, Rectangle, Rectangle, Rectangle, bool, bool, bool, bool)' 的圈复杂度为 32。重写或重构该方法，以便将复杂度降低到 25。</Issue>
+            </Message>
+            <Message Id="sysBottmVisibale" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlBoxManager.cs" Line="281">从未用过 'ControlBoxManager.ProcessMouseMove(Point, Rectangle, Rectangle, Rectangle, Rectangle, bool, bool, bool, bool)' 的参数 'sysBottmVisibale'。请移除该参数或在方法体中使用它。</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlBoxManager.cs" Line="424">使用“String.IsNullOrEmpty”调用来替换 'ControlBoxManager.ProcessMouseMove(Point, Rectangle, Rectangle, Rectangle, Rectangle, bool, bool, bool, bool)' 中的 'string.operator !=(string, string)' 调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ControlPaintEx" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">由于类型 'ControlPaintEx' 仅包含“static”成员，因此将它标记为“static”可阻止编译器添加默认公共构造函数。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DrawBackgroundImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Color,System.Windows.Forms.ImageLayout,System.Drawing.Rectangle,System.Drawing.Rectangle)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="73">在方法 'ControlPaintEx.DrawBackgroundImage(Graphics, Image, Color, ImageLayout, Rectangle, Rectangle)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawBackgroundImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Color,System.Windows.Forms.ImageLayout,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Point)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="93">在方法 'ControlPaintEx.DrawBackgroundImage(Graphics, Image, Color, ImageLayout, Rectangle, Rectangle, Point)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawBackgroundImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Color,System.Windows.Forms.ImageLayout,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Point,System.Windows.Forms.RightToLeft)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="114">在方法 'ControlPaintEx.DrawBackgroundImage(Graphics, Image, Color, ImageLayout, Rectangle, Rectangle, Point, RightToLeft)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="188">在方法 'ControlPaintEx.DrawBackgroundImage(Graphics, Image, Color, ImageLayout, Rectangle, Rectangle, Point, RightToLeft)' 中，'imageAttr' 对象未按所有异常路径释放。请在对 'imageAttr' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+            <Message Id="1" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="190">在外部可见方法 'ControlPaintEx.DrawBackgroundImage(Graphics, Image, Color, ImageLayout, Rectangle, Rectangle, Point, RightToLeft)' 中，请在使用参数“backgroundImage”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawCheckedFlag(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Flag" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberNoAlternate" Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="20">将成员名称 'ControlPaintEx.DrawCheckedFlag(Graphics, Rectangle, Color)' 中的词条“Flag”替换为相应的替代项或者将它完全移除。</Issue>
+            </Message>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="33">在外部可见方法 'ControlPaintEx.DrawCheckedFlag(Graphics, Rectangle, Color)' 中，请在使用参数“graphics”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawGlass(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Color,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="49">在方法 'ControlPaintEx.DrawGlass(Graphics, RectangleF, Color, int, int)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="61">在外部可见方法 'ControlPaintEx.DrawGlass(Graphics, RectangleF, Color, int, int)' 中，请在使用参数“g”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawGlass(System.Drawing.Graphics,System.Drawing.RectangleF,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="ControlPaintEx.cs" Line="39">在方法 'ControlPaintEx.DrawGlass(Graphics, RectangleF, int, int)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DrawUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">由于类型 'DrawUtil' 仅包含“static”成员，因此将它标记为“static”可阻止编译器添加默认公共构造函数。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CreateCloseFlagPath(System.Drawing.Rectangle)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Flag" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberNoAlternate" Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="DrawUtil.cs" Line="12">将成员名称 'DrawUtil.CreateCloseFlagPath(Rectangle)' 中的词条“Flag”替换为相应的替代项或者将它完全移除。</Issue>
+            </Message>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="DrawUtil.cs" Line="17">在方法 'DrawUtil.CreateCloseFlagPath(Rectangle)' 中，'path' 对象未按所有异常路径释放。请在对 'path' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateMaximizeFlafPath(System.Drawing.Rectangle,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="DrawUtil.cs" Line="102">在方法 'DrawUtil.CreateMaximizeFlafPath(Rectangle, bool)' 中，'path' 对象未按所有异常路径释放。请在对 'path' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateMinimizeFlagPath(System.Drawing.Rectangle)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Flag" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberNoAlternate" Certainty="95" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="DrawUtil.cs" Line="80">将成员名称 'DrawUtil.CreateMinimizeFlagPath(Rectangle)' 中的词条“Flag”替换为相应的替代项或者将它完全移除。</Issue>
+            </Message>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="DrawUtil.cs" Line="85">在方法 'DrawUtil.CreateMinimizeFlagPath(Rectangle)' 中，'path' 对象未按所有异常路径释放。请在对 'path' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GraphicsPathHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreatePath(System.Drawing.Rectangle,System.Int32,SkinForm.RoundStyle,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="GraphicsPathHelper.cs" Line="29">在方法 'GraphicsPathHelper.CreatePath(Rectangle, int, RoundStyle, bool)' 中，'path' 对象未按所有异常路径释放。请在对 'path' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'NativeMethods' 是显然没有实例化过的内部类。如果是这样，请从程序集内移除该代码。如果此内部类只用于包含静态方法，请考虑添加私有构造函数，以阻止编译器生成默认构造函数。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#FALSE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">似乎从未使用过字段 'NativeMethods.FALSE' 或只对它进行过赋值。请使用此字段或将它移除。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReleaseCapture()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.ReleaseCapture()' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">向 P/Invoke 'NativeMethods.ReleaseCapture()' 的返回类型添加 MarshalAsAttribute。如果对应的非托管返回类型为 4 字节的 Win32“BOOL”，则使用 MarshalAs(UnmanagedType.Bool)；对于 1 字节的 C++“bool”，请使用 MarshalAs(UnmanagedType.U1)。</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeSafeCriticalFxCopRule" Category="Microsoft.Security" CheckId="CA5122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="Warning">P/Invoke 方法 'NativeMethods.ReleaseCapture()' 已标记为安全关键的。因为 P/Invoke 只能由关键代码调用，所以应将此声明标记为安全关键的，或将其批注完全删除以避免产生误解。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods+RECT" Kind="Struct" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="NativeMethods.cs" Line="343">'NativeMethods.RECT.RECT(int, int, int, int)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FromRectangle(System.Drawing.Rectangle)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="NativeMethods.cs" Line="371">'NativeMethods.RECT.FromRectangle(Rectangle)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FromXYWH(System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="NativeMethods.cs" Line="363">'NativeMethods.RECT.FromXYWH(int, int, int, int)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Rect" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Rect()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="NativeMethods.cs" Line="353">'NativeMethods.RECT.Rect.get()' 似乎没有上游 public 或 protected 调用方。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RenderHelper" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'RenderHelper' 是显然没有实例化过的内部类。如果是这样，请从程序集内移除该代码。如果此内部类只用于包含静态方法，请考虑添加私有构造函数，以阻止编译器生成默认构造函数。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RenderBackgroundInternal(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,SkinForm.RoundStyle,System.Boolean,System.Boolean,System.Drawing.Drawing2D.LinearGradientMode)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="RenderHelper.cs" Line="28">'RenderHelper.RenderBackgroundInternal(Graphics, Rectangle, Color, Color, Color, RoundStyle, bool, bool, LinearGradientMode)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RenderBackgroundInternal(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,SkinForm.RoundStyle,System.Int32,System.Boolean,System.Boolean,System.Drawing.Drawing2D.LinearGradientMode)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="RenderHelper.cs" Line="53">'RenderHelper.RenderBackgroundInternal(Graphics, Rectangle, Color, Color, Color, RoundStyle, int, bool, bool, LinearGradientMode)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+            <Message Id="roundWidth" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="RenderHelper.cs" Line="53">从未用过 'RenderHelper.RenderBackgroundInternal(Graphics, Rectangle, Color, Color, Color, RoundStyle, int, bool, bool, LinearGradientMode)' 的参数 'roundWidth'。请移除该参数或在方法体中使用它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">类型名 'SkinForm' 与命名空间名称“SkinForm”整体或部分冲突。请更改其中任一名称以消除冲突。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_captionBackColor" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'SkinForm._captionBackColor' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_captionBackImage" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'SkinForm._captionBackImage' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_renderer" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'SkinForm._renderer' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateParams" Kind="Property" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_CreateParams()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+               <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="325">'SkinForm.CreateParams.get()' 调入具有 LinkDemand 的 'Form.CreateParams.get()'。通过此调用，'Form.CreateParams.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.CreateParams.get()'&#xD;&#xA;   -&gt;'SkinForm.CreateParams.get()'</Issue>
+              </Message>
+              <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+               <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="325">向 'SkinForm.CreateParams.get()' 添加下列安全特性以匹配基方法 'Form.CreateParams.get()' 上的 LinkDemand: [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)]。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#FormBorderStyle" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_FormBorderStyle(System.Windows.Forms.FormBorderStyle)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="value" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+               <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="307">从未用过 'SkinForm.FormBorderStyle.set(FormBorderStyle)' 的参数 'value'。请移除该参数或在方法体中使用它。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#OnMouseDown(System.Windows.Forms.MouseEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="441">在外部可见方法 'SkinForm.OnMouseDown(MouseEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnMouseMove(System.Windows.Forms.MouseEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="434">在外部可见方法 'SkinForm.OnMouseMove(MouseEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnMouseUp(System.Windows.Forms.MouseEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="448">在外部可见方法 'SkinForm.OnMouseUp(MouseEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnPaint(System.Windows.Forms.PaintEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="472">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormBackgroundRenderEventArgs(this, g, rect)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="478">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormBorderRenderEventArgs(this, g, rect, this._active)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="475">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormCaptionRenderEventArgs(this, g, this.CaptionRect, this._captionBackColor, this._captionBackImage, this._active)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="484">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormControlBoxRenderEventArgs(this, g, this.ControlBoxManager.CloseBoxRect, this._active, ControlBoxStyle.Close, this.ControlBoxManager.CloseBoxState)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="496">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormControlBoxRenderEventArgs(this, g, this.ControlBoxManager.MaximizeBoxRect, this._active, ControlBoxStyle.Maximize, this.ControlBoxManager.MaximizeBoxState)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="508">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormControlBoxRenderEventArgs(this, g, this.ControlBoxManager.MinimizeBoxRect, this._active, ControlBoxStyle.Minimize, this.ControlBoxManager.MinimizeBoxState)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="520">在方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在对 'new SkinFormControlBoxRenderEventArgs(this, g, this.ControlBoxManager.SysBottomRect, this._active, ControlBoxStyle.SysBottom, this.ControlBoxManager.SysBottomState)' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="468">在外部可见方法 'SkinForm.OnPaint(PaintEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WmGetMinMaxInfo(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="671">'SkinForm.WmGetMinMaxInfo(ref Message)' 调入具有 LinkDemand 的 'Marshal.PtrToStructure(IntPtr, Type)'。通过此调用，'Marshal.PtrToStructure(IntPtr, Type)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmGetMinMaxInfo(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmGetMinMaxInfo(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="671">'SkinForm.WmGetMinMaxInfo(ref Message)' 调入具有 LinkDemand 的 'Marshal.StructureToPtr(object, IntPtr, bool)'。通过此调用，'Marshal.StructureToPtr(object, IntPtr, bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmGetMinMaxInfo(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmGetMinMaxInfo(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="671">'SkinForm.WmGetMinMaxInfo(ref Message)' 调入具有 LinkDemand 的 'Message.LParam.get()'。通过此调用，'Message.LParam.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmGetMinMaxInfo(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmGetMinMaxInfo(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WmNcActive(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="710">'SkinForm.WmNcActive(ref Message)' 调入具有 LinkDemand 的 'Message.Result.set(IntPtr)'。通过此调用，'Message.Result.set(IntPtr)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmNcActive(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmNcActive(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="710">'SkinForm.WmNcActive(ref Message)' 调入具有 LinkDemand 的 'Message.WParam.get()'。通过此调用，'Message.WParam.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmNcActive(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmNcActive(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WmNcHitTest(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="580">'SkinForm.WmNcHitTest(ref Message)' 调入具有 LinkDemand 的 'Message.LParam.get()'。通过此调用，'Message.LParam.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmNcHitTest(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmNcHitTest(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="580">'SkinForm.WmNcHitTest(ref Message)' 调入具有 LinkDemand 的 'Message.Result.set(IntPtr)'。通过此调用，'Message.Result.set(IntPtr)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WmNcHitTest(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WmNcHitTest(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WndProc(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="531">'SkinForm.WndProc(ref Message)' 调入具有 LinkDemand 的 'Form.WndProc(ref Message)'。通过此调用，'Form.WndProc(ref Message)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="531">'SkinForm.WndProc(ref Message)' 调入具有 LinkDemand 的 'Message.Msg.get()'。通过此调用，'Message.Msg.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'SkinForm.WndProc(ref Message)'</Issue>
+            </Message>
+            <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinForm.cs" Line="531">向 'SkinForm.WndProc(ref Message)' 添加下列安全特性以匹配基方法 'Form.WndProc(ref Message)' 上的 LinkDemand: [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)]。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinFormBackgroundRenderEventArgs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'SkinFormBackgroundRenderEventArgs' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'PaintEventArgs'</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(SkinForm.SkinForm,System.Drawing.Graphics,System.Drawing.Rectangle)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormBackgroundRenderEvent.cs" Line="28">在方法 'SkinFormBackgroundRenderEventArgs.SkinFormBackgroundRenderEventArgs(SkinForm, Graphics, Rectangle)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinFormBackgroundRenderEventHandler" Kind="Delegate" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">移除 'SkinFormBackgroundRenderEventHandler' 而改用 EventHandler&lt;T&gt;</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SkinFormBorderRenderEventArgs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'SkinFormBorderRenderEventArgs' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'PaintEventArgs'</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(SkinForm.SkinForm,System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormBorderRenderEvent.cs" Line="30">在方法 'SkinFormBorderRenderEventArgs.SkinFormBorderRenderEventArgs(SkinForm, Graphics, Rectangle, bool)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinFormBorderRenderEventHandler" Kind="Delegate" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">移除 'SkinFormBorderRenderEventHandler' 而改用 EventHandler&lt;T&gt;</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SkinFormCaptionRenderEventArgs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'SkinFormCaptionRenderEventArgs' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'PaintEventArgs'</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(SkinForm.SkinForm,System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormCaptionRenderEvent.cs" Line="24">在方法 'SkinFormCaptionRenderEventArgs.SkinFormCaptionRenderEventArgs(SkinForm, Graphics, Rectangle, bool)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(SkinForm.SkinForm,System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Image,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="g" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormCaptionRenderEvent.cs" Line="24">在方法 'SkinFormCaptionRenderEventArgs.SkinFormCaptionRenderEventArgs(SkinForm, Graphics, Rectangle, Color, Image, bool)' 中，考虑将参数名称 'g' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinFormCaptionRenderEventHandler" Kind="Delegate" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">移除 'SkinFormCaptionRenderEventHandler' 而改用 EventHandler&lt;T&gt;</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SkinFormControlBoxRenderEventArgs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'SkinFormControlBoxRenderEventArgs' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'PaintEventArgs'</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SkinFormControlBoxRenderEventHandler" Kind="Delegate" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">移除 'SkinFormControlBoxRenderEventHandler' 而改用 EventHandler&lt;T&gt;</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SkinFormPictureRenderer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateRegion(SkinForm.SkinForm)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="35">在外部可见方法 'SkinFormPictureRenderer.CreateRegion(SkinForm)' 中，请在使用参数“form”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawCaptionBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean,System.Drawing.Color,System.Drawing.Image)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="258">从未使用 'SkinFormPictureRenderer.DrawCaptionBackground(Graphics, Rectangle, bool, Color, Image)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+            <Message Id="active" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="258">从未用过 'SkinFormPictureRenderer.DrawCaptionBackground(Graphics, Rectangle, bool, Color, Image)' 的参数 'active'。请移除该参数或在方法体中使用它。</Issue>
+            </Message>
+            <Message Id="backcolor" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="258">从未用过 'SkinFormPictureRenderer.DrawCaptionBackground(Graphics, Rectangle, bool, Color, Image)' 的参数 'backcolor'。请移除该参数或在方法体中使用它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawCaptionBorder(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,SkinForm.RoundStyle,System.Drawing.Color)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="292">'SkinFormPictureRenderer.DrawCaptionBorder(Graphics, Rectangle, int, RoundStyle, Color)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="292">从未使用 'SkinFormPictureRenderer.DrawCaptionBorder(Graphics, Rectangle, int, RoundStyle, Color)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawCaptionText(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Drawing.Color)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="315">从未使用 'SkinFormPictureRenderer.DrawCaptionText(Graphics, Rectangle, string, Font, Color)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawFormBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,SkinForm.RoundStyle)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="225">'SkinFormPictureRenderer.DrawFormBackground(Graphics, Rectangle, int, RoundStyle)' 似乎没有上游 public 或 protected 调用方。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawIcon(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Icon)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="306">从未使用 'SkinFormPictureRenderer.DrawIcon(Graphics, Rectangle, Icon)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitSkinForm(SkinForm.SkinForm)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="48">在外部可见方法 'SkinFormPictureRenderer.InitSkinForm(SkinForm)' 中，请在使用参数“form”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormBorder(SkinForm.SkinFormBorderRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="61">在外部可见方法 'SkinFormPictureRenderer.OnRenderSkinFormBorder(SkinFormBorderRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormCaption(SkinForm.SkinFormCaptionRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="77">在外部可见方法 'SkinFormPictureRenderer.OnRenderSkinFormCaption(SkinFormCaptionRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormControlBox(SkinForm.SkinFormControlBoxRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormPictureRenderer.cs" Line="147">在外部可见方法 'SkinFormPictureRenderer.OnRenderSkinFormControlBox(SkinFormControlBoxRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinFormProfessionalRenderer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateRegion(SkinForm.SkinForm)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="45">在外部可见方法 'SkinFormProfessionalRenderer.CreateRegion(SkinForm)' 中，请在使用参数“form”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawIcon(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Icon)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="219">从未使用 'SkinFormProfessionalRenderer.DrawIcon(Graphics, Rectangle, Icon)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitSkinForm(SkinForm.SkinForm)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="59">在外部可见方法 'SkinFormProfessionalRenderer.InitSkinForm(SkinForm)' 中，请在使用参数“form”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormBackground(SkinForm.SkinFormBackgroundRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="137">在外部可见方法 'SkinFormProfessionalRenderer.OnRenderSkinFormBackground(SkinFormBackgroundRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormBorder(SkinForm.SkinFormBorderRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="123">在外部可见方法 'SkinFormProfessionalRenderer.OnRenderSkinFormBorder(SkinFormBorderRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormCaption(SkinForm.SkinFormCaptionRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="65">在外部可见方法 'SkinFormProfessionalRenderer.OnRenderSkinFormCaption(SkinFormCaptionRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnRenderSkinFormControlBox(SkinForm.SkinFormControlBoxRenderEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinFormProfessionalRenderer.cs" Line="156">在外部可见方法 'SkinFormProfessionalRenderer.OnRenderSkinFormControlBox(SkinFormControlBoxRenderEventArgs)' 中，请在使用参数“e”之前先对其进行验证。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinFormRenderer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'SkinFormRenderer' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'EventHandlerList'。如果以前提供过 'SkinFormRenderer'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SkinPictureForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IconRect" Kind="Property" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_IconRect()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+             <Messages>
+              <Message Id="iconRecY" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinPictureForm.cs" Line="77">'SkinPictureForm.IconRect.get()' 声明类型为 'int' 的变量 'iconRecY'，但从未使用过该变量或只对它进行过赋值。请使用此变量或将它移除。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#InitializeComponent()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="请不要将文本作为本地化参数传递" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinPictureForm.Designer.cs" Line="43">方法 'SkinPictureForm.InitializeComponent()' 将一个文本字符串作为对 'Control.Text.set(string)' 的调用的参数“value”传递。改为从资源表检索以下字符串: "SkinPictureForm"。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnSysBottomClick(System.Object)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="e" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinPictureForm.cs" Line="405">在方法 'SkinPictureForm.OnSysBottomClick(object)' 中，考虑将参数名称 'e' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SysbottomAv(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Av" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinPictureForm.cs" Line="401">更正成员名称 'SkinPictureForm.SysbottomAv(object)' 中“Av”的大小写，将其改为“AV”。</Issue>
+            </Message>
+            <Message Id="e" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\Administrator\Desktop\zhengdong\SkinForm" File="SkinPictureForm.cs" Line="401">在方法 'SkinPictureForm.SysbottomAv(object)' 中，考虑将参数名称 'e' 改为一个更能体现其意义的名称。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SysBottomClick" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+             <Issue Name="Second" Certainty="95" Level="Error">将 'SkinPictureForm.SysBottomEventHandler' 的第二个参数声明为 EventArgs，或者声明为扩展 EventArgs 的类型的名为“e”的实例。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SkinPictureForm+SysBottomEventHandler" Kind="Delegate" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2018-05-07 09:11:57Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Error">不要嵌套类型 'SkinPictureForm.SysBottomEventHandler'。或者，更改其可访问性，使它在外部不可见。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>程序集应具有有效的强名称</Name>
+   <Description>程序集没有强名称，强名称无效，或者强名称只有经过计算机配置后才有效。不应部署处于这种状态的程序集。出现这种情况最常见原因有: 1) 对程序集进行签名后，修改了该程序集的内容；2) 签名过程失败；3) 延迟了程序集签名；4) 存在一个允许检查通过(原本不应通过)的注册表项。</Description>
+   <Resolution Name="NoStrongName">用强名称密钥对 {0} 进行签名。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>避免过度复杂</Name>
+   <Description>过于复杂的方法实现会增加理解和维护代码的难度。</Description>
+   <Resolution Name="Default">{0} 的圈复杂度为 {1}。重写或重构该方法，以便将复杂度降低到 {2}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>避免使用未调用的私有代码</Name>
+   <Description>存在对外部不可见的未调用代码，该代码不是已知的运行时入口点。如果错误地引发此冲突，请向 Visual Studio 代码分析团队发送问题报告。</Description>
+   <Resolution Name="Default">{0} 似乎没有上游 public 或 protected 调用方。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>避免未实例化的内部类</Name>
+   <Description>检测到显然从未实例化过的内部类。此规则不会尝试检测后期绑定创建，并且，如果某一类型的实例都是以这种方法(例如，通过 Activator.CreateInstance 或将类型作为参数传递给 TypeConverter 构造函数)创建的，则将产生误报。</Description>
+   <Resolution Name="Default">{0} 是显然没有实例化过的内部类。如果是这样，请从程序集内移除该代码。如果此内部类只用于包含静态方法，请考虑添加私有构造函数，以阻止编译器生成默认构造函数。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>避免未使用的私有字段</Name>
+   <Description>检测到程序集内有似乎未访问过的私有字段。如果错误地引发了此冲突，请向 Visual Studio 代码分析团队发送问题报告。</Description>
+   <Resolution Name="Default">似乎从未使用过字段 {0} 或只对它进行过赋值。请使用此字段或将它移除。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816">
+   <Name>正确调用 GC.SuppressFinalize</Name>
+   <Description>调用 Dispose 后，应调用 GC.SuppressFinalize 以取消实例的终止过程。实现 IDisposable 的对象应通过 IDisposable.Dispose 方法调用 SuppressFinalize，以防止垃圾回收器对不需要终止的对象调用 Object.Finalize。</Description>
+   <Resolution Name="NotCalled">将 {0} 更改为调用 {1}。这将使引入终结器的派生类型无需重新实现“IDisposable”即可调用它。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182269.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405">
+   <Name>COM 可见类型的基类型应对 COM 可见</Name>
+   <Description>COM 可见类型应具有 COM 一致可见的对象层次结构。</Description>
+   <Resolution Name="Default">{0} 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182202.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>正确声明事件处理程序</Name>
+   <Description>按照约定，.NET 事件有两个参数，分别用于指定事件发送方和事件数据。事件处理程序签名应遵循以下形式: void MyEventHandler(object sender, EventArgs e)。“sender”参数的类型始终是 System.Object，即使该参数可能使用更具体的类型。“e”参数的类型始终是 System.EventArgs。不提供事件数据的事件应使用 System.EventHandler 委托类型。事件处理程序返回 void 以便将每个事件发送给多个目标方法。目标返回的任何值在第一次调用之后将会丢失。</Description>
+   <Resolution Name="Second">将 {0} 的第二个参数声明为 EventArgs，或者声明为扩展 EventArgs 的类型的名为“e”的实例。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>不要声明可见实例字段</Name>
+   <Description>在其声明类型的外部可见的实例字段会限制您更改这些数据项的实现详细信息的能力。请改用属性。属性不会降低可用性或性能，并且能够提供灵活性，因为它们隐藏了基础数据的实现详细信息。</Description>
+   <Resolution Name="Default">由于字段 {0} 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+   <Name>不要使用链接请求间接公开方法</Name>
+   <Description>不要使用不执行安全性检查的方法来包装受 LinkDemand 保护的方法。LinkDemand 检查直接调用方的权限而不是调用堆栈中所有调用方的权限。在这种情况下，将检查包装器方法的权限。如果包装器方法本身不检查调用堆栈中位置较高的调用方的权限，则尽管恶意代码没有足够的权限，但它仍可能能够执行被包装的函数。</Description>
+   <Resolution Name="Default">{0} 调入具有 LinkDemand 的 {1}。通过此调用，{1} 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: {2}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182303.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>标识符的大小写应当正确</Name>
+   <Description>类型、命名空间和成员标识符应采用 Pascal 大小写格式。参数标识符应采用 Camel 大小写格式。这些标识符内由两个字母组成的首字母缩略词应全部大写，例如，应采用 System.IO，而不是 System.Io。由三个或更多个字母组成的首字母缩略词应采用 Pascal 大小写格式，例如，应采用 System.Xml，而不是 System.XML。Pascal 大小写格式约定每个单词的首字母大写，如 BackColor。Camel 大小写格式约定第一个单词的首字母小写，所有后续单词的首字母都大写，如 backgroundColor。尽管有些由两个字母组成的首字母缩略词习惯采用不完全大写形式，但不能因此而排斥此规则。例如，“DbConnection”很常见，但并不正确，应采用 DBConnection。为了与现有的非托管符号方案兼容，可能需要违反此规则。但一般来说，这些符号在使用它们的程序集之外不可见。</Description>
+   <Resolution Name="Member">更正成员名称 {1} 中“{0}”的大小写，将其改为“{2}”。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>标识符应正确拼写</Name>
+   <Description>组成标识符的各单词不应缩写，并且应正确拼写。如果此规则对应识别的词条产生了误报，请将该词添加到 FxCop 自定义字典中。</Description>
+   <Resolution Name="MemberParameterMoreMeaningfulName">在方法 {0} 中，考虑将参数名称 {1} 改为一个更能体现其意义的名称。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>正确实现 IDisposable</Name>
+   <Description>所有 IDisposable 类型都应正确实现 Dispose 模式。</Description>
+   <Resolution Name="DisposeImplementation">修改 {0}，使它先调用 Dispose(true)，然后对当前对象实例(在 Visual Basic 中为“this”或“Me”)调用 GC.SuppressFinalize，最后返回。</Resolution>
+   <Resolution Name="ProvideDisposeBool">对 {0} 提供 Dispose(bool) 的可重写实现或将该类型标记为密封。对 Dispose(false) 的调用应仅清理本机资源。对 Dispose(true) 的调用应既清理托管资源又清理本机资源。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>用 CLSCompliantAttribute 标记程序集</Name>
+   <Description>程序集应使用 CLSCompliant 特性显式说明其 ClS 遵从性。没有此特性的程序集不符合 CLS。即使程序集、模块或类型的某些部分不符合 CLS，这些程序集、模块或类型本身也可以是符合 CLS 的。适用下列规则: 1) 如果元素标记为 CLSCompliant，则所有不符合 CLS 的成员都必须有参数设置为 false 的 CLSCompliant 特性。2) 对于每个不符合 CLS 的成员，都必须提供一个相应的符合 CLS 的备选成员。</Description>
+   <Resolution Name="Default">使用 CLSCompliant(true)来标记 {0}，因为它公开外部可见的类型。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithComVisible" Category="Microsoft.Design" CheckId="CA1017">
+   <Name>用 ComVisibleAttribute 标记程序集</Name>
+   <Description>System.Runtime.InteropServices.ComVisible 特性指示 COM 客户端能否使用库。良好的设计要求开发人员显式指示 COM 可见性。此特性的默认值为“true”。但最佳设计应是: 将程序集的 ComVisible 特性标记为 false，然后根据需要将类型、接口和单个成员的 ComVisible 特性标记为 true。</Description>
+   <Resolution Name="NoAttribute">因为 {0} 公开外部可见的类型，请在程序集级别使用 ComVisible(false)来标记它，然后使用 ComVisible(true)来标记该程序集内应当向 COM 客户端公开的所有类型。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182157.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError, Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>用 NeutralResourcesLanguageAttribute 标记程序集</Name>
+   <Description>NeutralResourcesLanguage 特性将用来呈现非特定区域性的程序集资源的语言通知给 ResourceManager。在查找与非特定区域性语言具有相同区域性的资源时，ResourceManager 会自动使用位于主程序集内的资源，而不是搜索具有当前线程的当前用户界面区域性的附属程序集。这会改进所加载的第一个资源的查找性能，并缩小工作集。</Description>
+   <Resolution Name="Default">由于程序集 {0} 包含基于 ResX 的资源文件，因此请使用 NeutralResourcesLanguage 特性来标记它，并指定该程序集内的资源所采用的语言。这会改进首次检索资源时的查找性能。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414">
+   <Name>用 MarshalAs 标记布尔型 P/Invoke 参数</Name>
+   <Description>应使用 MarshalAs 特性对所有布尔型 P/Invoke 参数和返回类型进行显式标记。默认情况下，系统会将所有布尔值封送为 4 字节的 UnmanagedType.Bool。这一行为对 Win32“BOOL”参数来说是正确的，但对 C++“bool”参数来说却是不正确的，后者应封送为 1 字节的 UnmanagedType.U1。为了便于维护代码，始终要为布尔型参数和返回值显式指定封送处理信息。</Description>
+   <Resolution Name="Return">向 P/Invoke {0} 的返回类型添加 MarshalAsAttribute。如果对应的非托管返回类型为 4 字节的 Win32“BOOL”，则使用 MarshalAs(UnmanagedType.Bool)；对于 1 字节的 C++“bool”，请使用 MarshalAs(UnmanagedType.U1)。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182206.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>将成员标记为 static</Name>
+   <Description>不访问实例数据或调用实例方法的方法可标记为 Static (在 Visual Basic 中为 Shared)。这样，编译器会向这些成员发出非虚拟调用站点，以防止在运行时对每个调用进行旨在确保当前对象指针为非 null 的检查。这样可以使对性能比较敏感的代码获得显著的性能提升。在某些情况下，无法访问当前对象实例表明存在正确性问题。</Description>
+   <Resolution Name="Default">从未使用 {0} 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+   <Name>嵌套类型不应是可见的</Name>
+   <Description>不要使用 public、protected 或 protected internal (Protected Friend)等嵌套类型作为类型的分组方式。使用命名空间实现此目的。嵌套类型仅在极为有限的情况下才是最佳设计。此外，不是所有的用户都能清楚地了解嵌套类型成员的可访问性。枚举数不受此规则限制。</Description>
+   <Resolution Name="Default">不要嵌套类型 {0}。或者，更改其可访问性，使它在外部不可见。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182162.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123">
+   <Name>重写链接请求应与基相同</Name>
+   <Description>在很多情况下，如果一个虚方法具有 LinkDemand，则它的任何重写方法都应具有 LinkDemand，同样，如果一个重写方法具有 LinkDemand，则被重写的虚方法也应具有 LinkDemand。由于调用方可能显式调用虚方法的任何重写方法，因此这些方法应具有相同的 LinkDemand 状态，否则应检查它们。由于调用方可能使用接口类型的引用来访问方法，因此上述规则也适用于对属于接口实现的方法进行的 LinkDemand 安全性检查。</Description>
+   <Resolution Name="BaseOnly">向 {0} 添加下列安全特性以匹配基方法 {1} 上的 LinkDemand: {2}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182305(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeSafeCriticalFxCopRule" Category="Microsoft.Security" CheckId="CA5122">
+   <Name>P/Invoke 声明不应为安全关键的。</Name>
+   <Description>P/Invoke 可能无法由透明代码调用，因此不应将它们标记为安全关键方法。这样做可能会使部分开发人员感到迷惑，因为他们可能认为其透明代码应该能够调用 P/Invoke 方法，因为该方法已标记为安全关键的。</Description>
+   <Resolution Name="Default">P/Invoke 方法 {0} 已标记为安全关键的。因为 P/Invoke 只能由关键代码调用，所以应将此声明标记为安全关键的，或将其批注完全删除以避免产生误解。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>移除未使用的局部变量</Name>
+   <Description>移除方法实现中未使用过的或只赋过值的局部变量。</Description>
+   <Resolution Name="Default">{0} 声明类型为 {2} 的变量 {1}，但从未使用过该变量或只对它进行过赋值。请使用此变量或将它移除。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>检查未使用的参数</Name>
+   <Description>检查在非虚方法的方法体中未使用的参数，以确保不存在应该访问这些参数的情况。未使用的参数会带来维护和性能开销。有时，与该规则冲突可能说明方法中存在实现 Bug，即，该参数实际上应该已在方法体中使用了。如果该参数由于向后兼容性而必须存在，请忽略关于此规则的警告。</Description>
+   <Resolution Name="Default">从未用过 {1} 的参数 {0}。请移除该参数或在方法体中使用它。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053">
+   <Name>静态容器类型不应具有构造函数</Name>
+   <Description>不需要创建只定义静态成员的类型的实例。如果没有指定构造函数，许多编译器都会自动添加公共的默认构造函数。为了避免出现这种情况，可能需要添加一个空的私有构造函数。</Description>
+   <Resolution Name="CSharp2_0">由于类型 {0} 仅包含“static”成员，因此将它标记为“static”可阻止编译器添加默认公共构造函数。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182169.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>使用字符串长度测试是否有空字符串</Name>
+   <Description>若要测试是否有空字符串，请检查 String.Length 是否等于零。对于如 "".Equals(someString) 和 String.Empty.Equals(someString) 之类的构造，其效率低于字符串长度测试。请使用 someString.Length == 0 检查来替换它们。</Description>
+   <Resolution Name="IsNullOrEmpty">使用“String.IsNullOrEmpty”调用来替换 {1} 中的 {0} 调用。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+   <Name>类型名不应与命名空间冲突</Name>
+   <Description>应避免标识符与命名空间名称整体或部分冲突。应首选能够描述类型的用途或内容的名称。</Description>
+   <Resolution Name="Default">类型名 {0} 与命名空间名称“{1}”整体或部分冲突。请更改其中任一名称以消除冲突。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182257.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>具有可释放字段的类型应该是可释放的</Name>
+   <Description>声明可释放成员的类型也应实现 IDisposable。如果该类型没有任何非托管资源，请不要在其上实现终结器。</Description>
+   <Resolution Name="DependsOnFix">在 {0} 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: {1}。如果以前提供过 {0}，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003">
+   <Name>使用泛型事件处理程序实例</Name>
+   <Description>目标为某个支持泛型的 .Net Framework 的版本时，不要声明用作事件处理程序的新委托。请改用 EventHandler&lt;T&gt; 实例。</Description>
+   <Resolution Name="Default">移除 {0} 而改用 EventHandler&lt;T&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182178.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>使用首选词条</Name>
+   <Description>使用首先词条，不使用已否决的词条。</Description>
+   <Resolution Name="MemberNoAlternate">将成员名称 {1} 中的词条“{0}”替换为相应的替代项或者将它完全移除。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>丢失范围之前释放对象</Name>
+   <Description>如果在对某个可释放对象的所有引用超出范围之前未显式释放该对象，则当垃圾回收器运行该对象的终结器时，会在某个不确定时间释放该对象。由于可能会发生阻止该对象的终结器运行的意外事件，因此应改为显式释放该对象。</Description>
+   <Resolution Name="ExceptionEdge">在方法 {0} 中，{1} 对象未按所有异常路径释放。请在对 {1} 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Resolution>
+   <Resolution Name="NonExceptionEdge">在方法 {0} 中，请在对 {1} 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="请不要将文本作为本地化参数传递" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>请不要将文本作为本地化参数传递</Name>
+   <Description>嵌入源代码的文本字符串难以进行本地化。对于通常应使用本地化的文本字符串的情况，要避免将文本字符串作为参数来传递。</Description>
+   <Resolution Name="KnownValue">方法 {0} 将一个文本字符串作为对 {2} 的调用的参数“{1}”传递。改为从资源表检索以下字符串: {3}。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>验证公共方法的参数</Name>
+   <Description>应检查传递给外部可见方法的所有引用参数是否为 Null (在 VB 中为 Nothing)。如果适用，在参数为 null 时，引发 System.ArgumentNullException。</Description>
+   <Resolution Name="Default">在外部可见方法 {0} 中，请在使用参数“{1}”之前先对其进行验证。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

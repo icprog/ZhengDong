@@ -1,0 +1,6 @@
+15:24:17.731  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.AnnouncementThread.GetCustomer() 位置 e:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\FishClient\AnnouncementThread.cs:行号 80
+15:46:17.289  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 e:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\FishClient\UserManager.cs:行号 133
+15:46:19.634  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 e:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\FishClient\UserManager.cs:行号 133

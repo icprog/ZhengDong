@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22834678-43AC-4788-9D86-F11DE9D91C20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FishBll</RootNamespace>
+    <AssemblyName>FishBll</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Setup\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FishEntity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Setup\FishEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPart\MySQL6.6.5\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bll\AccountsReceivableBll.cs" />
+    <Compile Include="Bll\BatchSheetBll.cs" />
+    <Compile Include="Bll\BillofladingBll.cs" />
+    <Compile Include="Bll\CallRecordsBll.cs" />
+    <Compile Include="Bll\CallRecordsDetailBll.cs" />
+    <Compile Include="Bll\CallRecordsVoBll.cs" />
+    <Compile Include="Bll\CargoFeedbackSheetBll.cs" />
+    <Compile Include="Bll\CheckBll.cs" />
+    <Compile Include="Bll\CheckDetailBll.cs" />
+    <Compile Include="Bll\CheckRecordBll.cs" />
+    <Compile Include="Bll\CompanyBll.cs" />
+    <Compile Include="Bll\ContractBll.cs" />
+    <Compile Include="Bll\ContractDetailBll.cs" />
+    <Compile Include="Bll\ContractProductBll.cs" />
+    <Compile Include="Bll\CustomerAnalysisReportBll.cs" />
+    <Compile Include="Bll\CustomerBll.cs" />
+    <Compile Include="Bll\CustomerOfCompanyBll.cs" />
+    <Compile Include="Bll\CustomStandardTableBll.cs" />
+    <Compile Include="Bll\DeliveredManagementBll.cs" />
+    <Compile Include="Bll\DictBll.cs" />
+    <Compile Include="Bll\DiscWarehouseBll.cs" />
+    <Compile Include="Bll\DisposeofcommentsBll.cs" />
+    <Compile Include="Bll\EnterWarehouseReceiptsBll.cs" />
+    <Compile Include="Bll\EntryBll.cs" />
+    <Compile Include="Bll\FinishBll.cs" />
+    <Compile Include="Bll\FinishedProListBll.cs" />
+    <Compile Include="Bll\FoodOutBll.cs" />
+    <Compile Include="Bll\FoodOutDetailBll.cs" />
+    <Compile Include="Bll\FormContractProcessingSheetBll.cs" />
+    <Compile Include="Bll\FunCodeBll.cs" />
+    <Compile Include="Bll\happeningBll.cs" />
+    <Compile Include="Bll\HomemadeStorageBll.cs" />
+    <Compile Include="Bll\ImageBll.cs" />
+    <Compile Include="Bll\ImageS_Bll.cs" />
+    <Compile Include="Bll\ingredientsBll.cs" />
+    <Compile Include="Bll\InquiryBll.cs" />
+    <Compile Include="Bll\InventoryAccountBll.cs" />
+    <Compile Include="Bll\InventoryBll.cs" />
+    <Compile Include="Bll\LoadingBillsBll.cs" />
+    <Compile Include="Bll\LoadingDetailBll.cs" />
+    <Compile Include="Bll\OnepoundBll.cs" />
+    <Compile Include="Bll\OutboundOrderBll.cs" />
+    <Compile Include="Bll\PackingWeightListBll.cs" />
+    <Compile Include="Bll\PaymentRequisitionBll.cs" />
+    <Compile Include="Bll\PersonBll.cs" />
+    <Compile Include="Bll\PresaleRequisitionBll.cs" />
+    <Compile Include="Bll\PriWarehouseBll.cs" />
+    <Compile Include="Bll\ProcessStateBll.cs" />
+    <Compile Include="Bll\ProcessStateForPurOneBll.cs" />
+    <Compile Include="Bll\ProcessStateForPurTwoBll.cs" />
+    <Compile Include="Bll\ProcessStateForSaleOneBll.cs" />
+    <Compile Include="Bll\ProcessStateForSaleTwoBll.cs" />
+    <Compile Include="Bll\ProductBll.cs" />
+    <Compile Include="Bll\ProductConfirmBll.cs" />
+    <Compile Include="Bll\ProductExBll.cs" />
+    <Compile Include="Bll\ProductQuoteBll.cs" />
+    <Compile Include="Bll\ProductSelfMakeBll.cs" />
+    <Compile Include="Bll\ProductSelfSaleBll.cs" />
+    <Compile Include="Bll\ProductSpotBll.cs" />
+    <Compile Include="Bll\ProgramBll.cs" />
+    <Compile Include="Bll\PurchaseAppFishInfoBll.cs" />
+    <Compile Include="Bll\PurchaseApplicationBll.cs" />
+    <Compile Include="Bll\PurchaseRequisitionBll.cs" />
+    <Compile Include="Bll\PurcurementContractBll.cs" />
+    <Compile Include="Bll\QuotationPriceListBll.cs" />
+    <Compile Include="Bll\QuoteBll.cs" />
+    <Compile Include="Bll\QuoteProductBll.cs" />
+    <Compile Include="Bll\ReceiptRecordBll.cs" />
+    <Compile Include="Bll\ReductionClauseBll.cs" />
+    <Compile Include="Bll\RemindBll.cs" />
+    <Compile Include="Bll\ReturnReceiptBll.cs" />
+    <Compile Include="Bll\RoleBll.cs" />
+    <Compile Include="Bll\RoleFunBll.cs" />
+    <Compile Include="Bll\SaleBll.cs" />
+    <Compile Include="Bll\salehaBll.cs" />
+    <Compile Include="Bll\SalesAssessmentBll.cs" />
+    <Compile Include="Bll\salesgsBll.cs" />
+    <Compile Include="Bll\SalesRContractBll.cs" />
+    <Compile Include="Bll\SalesRequisitionBll.cs" />
+    <Compile Include="Bll\SampleSingleBll.cs" />
+    <Compile Include="Bll\SelfcontrolWareBll.cs" />
+    <Compile Include="Bll\SelfStorageFlowingReportBll.cs" />
+    <Compile Include="Bll\SequenceBll.cs" />
+    <Compile Include="Bll\SetReviewBll.cs" />
+    <Compile Include="Bll\sgsindicatorsBll.cs" />
+    <Compile Include="Bll\ShippingRecordsBll.cs" />
+    <Compile Include="Bll\SpotBll.cs" />
+    <Compile Include="Bll\StorageBillsBll.cs" />
+    <Compile Include="Bll\StorageOfRequisitionBll.cs" />
+    <Compile Include="Bll\StorageReportBll.cs" />
+    <Compile Include="Bll\SubProcurementBll.cs" />
+    <Compile Include="Bll\TheproblemsheetBll.cs" />
+    <Compile Include="Bll\TotalDataSheetbll.cs" />
+    <Compile Include="Bll\UserRoleBll.cs" />
+    <Compile Include="Bll\WarehouseReceiptBll.cs" />
+    <Compile Include="Bll\WarnBll.cs" />
+    <Compile Include="Dao\AccountsReceivableDao.cs" />
+    <Compile Include="Dao\BatchSheetDao.cs" />
+    <Compile Include="Dao\BillofladingDao.cs" />
+    <Compile Include="Dao\BillofladingDaoEx.cs" />
+    <Compile Include="Dao\CallRecordsDao.cs" />
+    <Compile Include="Dao\CallRecordsDetailDao.cs" />
+    <Compile Include="Dao\CargoFeedbackSheetDao.cs" />
+    <Compile Include="Dao\CheckDao.cs" />
+    <Compile Include="Dao\CheckDetailDao.cs" />
+    <Compile Include="Dao\CheckDetailDaoEx.cs" />
+    <Compile Include="Dao\CheckRecordDao.cs" />
+    <Compile Include="Dao\CompanyDao.cs" />
+    <Compile Include="Dao\CompanyDaoEx.cs" />
+    <Compile Include="Dao\ContractDao.cs" />
+    <Compile Include="Dao\ContractDaoEx.cs" />
+    <Compile Include="Dao\ContractDetailDao.cs" />
+    <Compile Include="Dao\ContractProductDao.cs" />
+    <Compile Include="Dao\CustomerAnalysisReportDao.cs" />
+    <Compile Include="Dao\CustomerDao.cs" />
+    <Compile Include="Dao\CustomerDaoEx.cs" />
+    <Compile Include="Dao\CustomerOfCompanyDao.cs" />
+    <Compile Include="Dao\CustomerOfCompanyDaoEx.cs" />
+    <Compile Include="Dao\CustomStandardTableDao.cs" />
+    <Compile Include="Dao\DeliveredManagementDao.cs" />
+    <Compile Include="Dao\DictDao.cs" />
+    <Compile Include="Dao\DiscWarehouseDao.cs" />
+    <Compile Include="Dao\DisposeofcommentsDao.cs" />
+    <Compile Include="Dao\EnterWarehouseReceiptsDao.cs" />
+    <Compile Include="Dao\EntryDao.cs" />
+    <Compile Include="Dao\FinishDao.cs" />
+    <Compile Include="Dao\FinishedProListDao.cs" />
+    <Compile Include="Dao\FoodOutDao.cs" />
+    <Compile Include="Dao\FoodOutDetailDao.cs" />
+    <Compile Include="Dao\FoodOutDetailDaoEx.cs" />
+    <Compile Include="Dao\FormContractProcessingSheetDao.cs" />
+    <Compile Include="Dao\FunCodeDao.cs" />
+    <Compile Include="Dao\happeningDao.cs" />
+    <Compile Include="Dao\happeningDaoEx.cs" />
+    <Compile Include="Dao\HomemadeStorageDao.cs" />
+    <Compile Include="Dao\HomemadeStorageDaoEx.cs" />
+    <Compile Include="Dao\ImageDao.cs" />
+    <Compile Include="Dao\ImageS_Dao.cs" />
+    <Compile Include="Dao\ingredientsDao.cs" />
+    <Compile Include="Dao\InquiryDao.cs" />
+    <Compile Include="Dao\InventoryAccountDao.cs" />
+    <Compile Include="Dao\InventoryDao.cs" />
+    <Compile Include="Dao\InventoryDaoEx.cs" />
+    <Compile Include="Dao\LoadingBillsDao.cs" />
+    <Compile Include="Dao\LoadingDetailDao.cs" />
+    <Compile Include="Dao\LoadingDetailDaoEx.cs" />
+    <Compile Include="Dao\OnepoundDao.cs" />
+    <Compile Include="Dao\OnepoundDaoEx.cs" />
+    <Compile Include="Dao\OutboundOrderDao.cs" />
+    <Compile Include="Dao\PackingWeightLisDao.cs" />
+    <Compile Include="Dao\PaymentRequisitionDao.cs" />
+    <Compile Include="Dao\PersonDao.cs" />
+    <Compile Include="Dao\PresaleRequisitionDao.cs" />
+    <Compile Include="Dao\PriWarehouseDao.cs" />
+    <Compile Include="Dao\ProcessStateDo.cs" />
+    <Compile Include="Dao\ProcessStateForPurOneDao.cs" />
+    <Compile Include="Dao\ProcessStateForPurTwoDao.cs" />
+    <Compile Include="Dao\ProcessStateForSaleOneDao.cs" />
+    <Compile Include="Dao\ProcessStateForSaleTwoDao.cs" />
+    <Compile Include="Dao\ProductConfirmDao.cs" />
+    <Compile Include="Dao\ProductDao.cs" />
+    <Compile Include="Dao\ProductDaoEx.cs" />
+    <Compile Include="Dao\ProductExDao.cs" />
+    <Compile Include="Dao\ProductExDaoEx.cs" />
+    <Compile Include="Dao\ProductQuoteDao.cs" />
+    <Compile Include="Dao\ProductSelfMakeDao.cs" />
+    <Compile Include="Dao\ProductSelfSaleDao.cs" />
+    <Compile Include="Dao\ProgramDao.cs" />
+    <Compile Include="Dao\PurchaseAppFishInfoDao.cs" />
+    <Compile Include="Dao\PurchaseApplicationDao.cs" />
+    <Compile Include="Dao\PurchaseRequisitionDao.cs" />
+    <Compile Include="Dao\PurcurementContractDao.cs" />
+    <Compile Include="Dao\QuotationPriceListDao.cs" />
+    <Compile Include="Dao\QuoteDao.cs" />
+    <Compile Include="Dao\QuoteDaoEx.cs" />
+    <Compile Include="Dao\QuoteProductDao.cs" />
+    <Compile Include="Dao\ReceiptRecordDao.cs" />
+    <Compile Include="Dao\ReductionClauseDao.cs" />
+    <Compile Include="Dao\RemindDao.cs" />
+    <Compile Include="Dao\ReturnReceiptDao.cs" />
+    <Compile Include="Dao\RoleDao.cs" />
+    <Compile Include="Dao\RoleFunDao.cs" />
+    <Compile Include="Dao\SaleDaoEx.cs" />
+    <Compile Include="Dao\salehaDao.cs" />
+    <Compile Include="Dao\SalerequisitionDao.cs" />
+    <Compile Include="Dao\SalerequisitionDaoEx.cs" />
+    <Compile Include="Dao\SalesAssessmentDao.cs" />
+    <Compile Include="Dao\salesgsDao.cs" />
+    <Compile Include="Dao\SalesRContractDao.cs" />
+    <Compile Include="Dao\SampleSingleDao.cs" />
+    <Compile Include="Dao\SelfcontrolWareDao.cs" />
+    <Compile Include="Dao\SelfStorageFlowingReportDao..cs" />
+    <Compile Include="Dao\SequenceDao.cs" />
+    <Compile Include="Dao\SetReviewDao.cs" />
+    <Compile Include="Dao\sgsindicatorsDao.cs" />
+    <Compile Include="Dao\sgsindicatorsDaoEx.cs" />
+    <Compile Include="Dao\ShippingRecordsDao.cs" />
+    <Compile Include="Dao\SpotDao.cs" />
+    <Compile Include="Dao\StorageBillsDao.cs" />
+    <Compile Include="Dao\StorageOfRequisitionDao.cs" />
+    <Compile Include="Dao\StorageReportDao.cs" />
+    <Compile Include="Dao\ProductSpotDao.cs" />
+    <Compile Include="Dao\SubProcurementDao.cs" />
+    <Compile Include="Dao\TheproblemsheetDao.cs" />
+    <Compile Include="Dao\TheproblemsheetDaoEx.cs" />
+    <Compile Include="Dao\TotalDataSheetDao.cs" />
+    <Compile Include="Dao\UserRoleDao.cs" />
+    <Compile Include="Dao\WarehouseReceiptDao.cs" />
+    <Compile Include="Dao\WarnDao.cs" />
+    <Compile Include="MySqlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{0e4df6ce-b608-40eb-9d31-4d0204230235}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

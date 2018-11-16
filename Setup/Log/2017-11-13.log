@@ -1,0 +1,109 @@
+15:10:31.372  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 310
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+16:37:42.813  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:05:35.690  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:09:00.060  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:11:44.466  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:21:40.802  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:23:21.481  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:28:51.397    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:28:51.398 列“code”不属于表 Table。
+17:30:29.703    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:29.705 列“code”不属于表 Table。
+17:30:33.392    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:33.393 列“code”不属于表 Table。
+17:30:45.606    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:45.607 列“code”不属于表 Table。
+17:30:46.200    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:46.201 列“code”不属于表 Table。
+17:30:46.455    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:46.455 列“code”不属于表 Table。
+17:30:46.675    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:46.676 列“code”不属于表 Table。
+17:30:46.864    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:46.864 列“code”不属于表 Table。
+17:30:47.076    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:30:47.077 列“code”不属于表 Table。
+17:30:59.955  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:31:33.010    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:31:33.013 列“code”不属于表 Table。
+17:32:39.470    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:32:39.473 列“code”不属于表 Table。
+17:33:50.868    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:33:50.870 列“code”不属于表 Table。
+17:34:05.357    在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 FishBll.Dao.ProcessStateDo.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 176
+   在 FishBll.Bll.ProcessStateBll.GetFormBilloflading(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 59
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 88
+17:34:05.359 列“code”不属于表 Table。
+17:40:33.552  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:41:11.555  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:43:26.589  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:44:57.527  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:45:31.028  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+17:54:13.466  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133

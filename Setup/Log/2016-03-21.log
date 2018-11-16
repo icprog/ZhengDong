@@ -1,0 +1,34 @@
+15:04:20.040  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 80
+15:07:54.705  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 80
+15:15:09.344  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 80
+15:19:38.407  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 80
+16:07:38.816  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\UserManager.cs:行号 133
+16:07:48.539  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\UserManager.cs:行号 133
+16:21:53.743  异常信息：Unable to connect to any of the specified MySQL hosts.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishBLL\MySqlHelper.cs:行号 343
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 81
+16:26:37.247  异常信息：Timeout in IO operation
+  堆栈信息:   在 MySql.Data.MySqlClient.TimedStream.StopTimer()
+   在 MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.ReadOk(Boolean read)
+   在 MySql.Data.MySqlClient.Driver.SetDatabase(String dbName)
+   在 MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(String databaseName)
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishBLL\MySqlHelper.cs:行号 329
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 81
+17:22:35.817  异常信息：Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishBLL\MySqlHelper.cs:行号 343
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\鱼粉饲料系统\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 81

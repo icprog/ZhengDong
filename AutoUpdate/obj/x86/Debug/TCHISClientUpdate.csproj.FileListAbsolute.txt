@@ -1,0 +1,12 @@
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUpdate.ConfirmControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUpdate.FormMain.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUpdate.StartControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUpdate.UpdateControl.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUpdate.csproj.GenerateResource.Cache
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCHISClientUp.exe.config
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCHISClientUp.exe
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\Setup\TCHISClientUp.pdb
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUpdate.csprojResolveAssemblyReference.cache
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUp.Properties.Resources.resources
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUp.exe
+E:\workspace\2.HIS V2.0\2.SRC\TCHisApplication\TCHISClient\TCHISClientUpdate\obj\x86\Debug\TCHISClientUp.pdb

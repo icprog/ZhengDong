@@ -1,0 +1,12 @@
+15:39:32.482  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 E:\工作\源代码\zhengdong_5.21上\FishClient\UserManager.cs:行号 133
+16:33:32.731  异常信息：Authentication to host '192.168.1.188' for user 'jxd' using method 'mysql_native_password' failed with message: Reading from the stream has failed.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 E:\工作\源代码\zhengdong_5.21上\FishBLL\MySqlHelper.cs:行号 326
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 E:\工作\源代码\zhengdong_5.21上\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishBll.Bll.RemindBll.GetRemind(String where) 位置 E:\工作\源代码\zhengdong_5.21上\FishBLL\Bll\RemindBll.cs:行号 12
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 E:\工作\源代码\zhengdong_5.21上\FishClient\AnnouncementThread.cs:行号 81
+16:33:32.785  异常信息：Authentication to host '192.168.1.188' for user 'jxd' using method 'mysql_native_password' failed with message: Reading from the stream has failed.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 E:\工作\源代码\zhengdong_5.21上\FishBLL\MySqlHelper.cs:行号 326
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 E:\工作\源代码\zhengdong_5.21上\FishBLL\Dao\SetReviewDao.cs:行号 522
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 E:\工作\源代码\zhengdong_5.21上\FishBLL\Bll\SetReviewBll.cs:行号 60
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 E:\工作\源代码\zhengdong_5.21上\FishClient\AnnouncementRemindThread.cs:行号 85

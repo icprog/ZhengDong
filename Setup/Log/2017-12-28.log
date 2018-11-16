@@ -1,0 +1,4 @@
+17:04:29.775  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.FormRemind.Query() 位置 D:\练习\FishSolution\FishClient\FormRemind.cs:行号 34
+   在 FishClient.FormRemind..ctor() 位置 D:\练习\FishSolution\FishClient\FormRemind.cs:行号 27
+   在 FishClient.FormMain.ShowPushMessageForm() 位置 D:\练习\FishSolution\FishClient\FormMain.cs:行号 185

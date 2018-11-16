@@ -1,0 +1,22 @@
+09:53:46.695    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 136
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 49
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+09:53:46.794 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select count(1) from t_paymentrequisition where applyCode='40C17110016'' at line 1
+09:53:50.526    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 136
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 49
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+09:53:50.528 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select count(1) from t_paymentrequisition where applyCode='40C17110016'' at line 1
+12:26:20.473  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+12:26:22.591  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+14:31:37.598  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+14:36:09.695  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+14:40:16.945  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133

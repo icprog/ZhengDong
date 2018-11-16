@@ -1,0 +1,2 @@
+09:27:23.745  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 E:\工作\新源代码\zhengdong_06.26上\FishClient\UserManager.cs:行号 133

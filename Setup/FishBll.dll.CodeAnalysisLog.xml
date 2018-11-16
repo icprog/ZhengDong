@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Administrator\Desktop\zhengdong\Setup\FishBll.dll">
+   <Modules>
+    <Module Name="fishbll.dll">
+     <Namespaces>
+      <Namespace Name="FishBll">
+       <Types>
+        <Type Name="MySqlHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BuildQueryCommand(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="744">传递给 'MySqlHelper.BuildQueryCommand(MySqlConnection, string, object[])' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'storedProcName'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteReader(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="279">传递给 'MySqlHelper.ExecuteReader(string)' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'strSQL'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteScaler(System.String,System.Object[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="731">可以在方法 'MySqlHelper.ExecuteScaler(string, object[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 731</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSql(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="93">可以在方法 'MySqlHelper.ExecuteSql(string)' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 93</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="93">可以在方法 'MySqlHelper.ExecuteSql(string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 93</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="59">传递给 'MySqlHelper.ExecuteSql(string)' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSql(System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="425">可以在方法 'MySqlHelper.ExecuteSql(string, params object[])' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 425</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="425">可以在方法 'MySqlHelper.ExecuteSql(string, params object[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 425</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSql(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="159">可以在方法 'MySqlHelper.ExecuteSql(string, string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 159</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="141">传递给 'MySqlHelper.ExecuteSql(string, string)' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlByTime(System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="125">可以在方法 'MySqlHelper.ExecuteSqlByTime(string, int)' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 125</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="125">可以在方法 'MySqlHelper.ExecuteSqlByTime(string, int)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 125</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="108">传递给 'MySqlHelper.ExecuteSqlByTime(string, int)' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlGet(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="198">可以在方法 'MySqlHelper.ExecuteSqlGet(string, string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 198</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="173">传递给 'MySqlHelper.ExecuteSqlGet(string, string)' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlInsertImg(System.String,System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="230">可以在方法 'MySqlHelper.ExecuteSqlInsertImg(string, byte[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 230</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="212">传递给 'MySqlHelper.ExecuteSqlInsertImg(string, byte[])' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'strSQL'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlReturnId(System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="469">可以在方法 'MySqlHelper.ExecuteSqlReturnId(string, params object[])' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 469</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="469">可以在方法 'MySqlHelper.ExecuteSqlReturnId(string, params object[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 469</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlTran(System.Collections.ArrayList)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="925">可以在方法 'MySqlHelper.ExecuteSqlTran(ArrayList)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 925</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="909">传递给 'MySqlHelper.ExecuteSqlTran(ArrayList)' 中的 'MySqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'SQLStringList[n]'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlTran(System.Collections.Hashtable)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="884">可以在方法 'MySqlHelper.ExecuteSqlTran(Hashtable)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 884</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlTranBool(System.Collections.ArrayList)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="975">可以在方法 'MySqlHelper.ExecuteSqlTranBool(ArrayList)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 975</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="949">传递给 'MySqlHelper.ExecuteSqlTranBool(ArrayList)' 中的 'MySqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'SQLStringList[n]'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRowsNum(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="382">可以在方法 'MySqlHelper.GetRowsNum(string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 382</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="371">传递给 'MySqlHelper.GetRowsNum(string)' 中的 'MySqlDataAdapter.MySqlDataAdapter(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSingle(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="266">可以在方法 'MySqlHelper.GetSingle(string)' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 266</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="266">可以在方法 'MySqlHelper.GetSingle(string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 266</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="243">传递给 'MySqlHelper.GetSingle(string)' 中的 'MySqlCommand.MySqlCommand(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSingle(System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="546">可以在方法 'MySqlHelper.GetSingle(string, params object[])' 中多次释放对象 'cmd'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 546</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="546">可以在方法 'MySqlHelper.GetSingle(string, params object[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 546</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PrepareCommand(MySql.Data.MySqlClient.MySqlCommand,MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlTransaction,System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="617">传递给 'MySqlHelper.PrepareCommand(MySqlCommand, MySqlConnection, MySqlTransaction, string, object[])' 中的 'MySqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'cmdText'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Query(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="322">可以在方法 'MySqlHelper.Query(string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 322, 324</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="312">传递给 'MySqlHelper.Query(string)' 中的 'MySqlDataAdapter.MySqlDataAdapter(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Query(System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="354">可以在方法 'MySqlHelper.Query(string, int)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 354</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="342">传递给 'MySqlHelper.Query(string, int)' 中的 'MySqlDataAdapter.MySqlDataAdapter(string, MySqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Query(System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="607">可以在方法 'MySqlHelper.Query(string, params object[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 607</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunProcedure(System.String,System.Object[],System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="678">可以在方法 'MySqlHelper.RunProcedure(string, object[], string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 678</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunProcedure(System.String,System.Object[],System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="693">可以在方法 'MySqlHelper.RunProcedure(string, object[], string, int)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 693</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunProcedureNull(System.String,System.Object[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-05-07 09:12:10Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Desktop\zhengdong\FishBLL" File="MySqlHelper.cs" Line="713">可以在方法 'MySqlHelper.RunProcedureNull(string, object[])' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 713</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 975</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>检查 SQL 查询是否存在安全漏洞</Name>
+   <Description>通过用户输入生成的 SQL 命令字符串容易受到 SQL 注入式攻击。Microsoft SQL Server 和其他数据库服务器支持存储过程和参数化 SQL 查询，这将降低受到注入式攻击的风险。</Description>
+   <Resolution Name="WithNonLiterals">传递给 {1} 中的 {0} 的查询字符串可能包含以下变量 {2}。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,204 @@
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\Setup\SkinForm.dll
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\Setup\SkinForm.pdb
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+E:\jinxiangdong\person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\Setup\SkinForm.dll
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\Setup\SkinForm.pdb
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\Setup\SkinForm.dll
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\Setup\SkinForm.pdb
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+E:\jxd\My\FishManageMS20150308\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+E:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+D:\练习\项目源码\FishSolution\Setup\SkinForm.dll
+D:\练习\项目源码\FishSolution\Setup\SkinForm.pdb
+D:\练习\项目源码\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\练习\项目源码\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\练习\项目源码\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+D:\练习\项目源码\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+D:\练习\项目源码\FishSolution\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+D:\练习\项目源码 - 副本 (3)\FishSolution\Setup\SkinForm.dll
+D:\练习\项目源码 - 副本 (3)\FishSolution\Setup\SkinForm.pdb
+D:\练习\项目源码 - 副本 (3)\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\练习\项目源码 - 副本 (3)\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\练习\项目源码 - 副本 (3)\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+D:\练习\项目源码 - 副本 (3)\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+C:\Users\Administrator\Desktop\FishSolution\Setup\SkinForm.dll
+C:\Users\Administrator\Desktop\FishSolution\Setup\SkinForm.pdb
+C:\Users\Administrator\Desktop\FishSolution\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+C:\Users\Administrator\Desktop\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+C:\Users\Administrator\Desktop\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\Setup\SkinForm.dll
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\Setup\SkinForm.pdb
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+E:\QQ文档\1257122541\FileRecv\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+D:\练习\FishSolution\FishSolution\Setup\SkinForm.dll
+D:\练习\FishSolution\FishSolution\Setup\SkinForm.pdb
+D:\练习\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\练习\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\练习\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+D:\练习\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+D:\练习\FishSolution\FishSolution\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+D:\练习\FishSolution\Setup\SkinForm.dll
+D:\练习\FishSolution\Setup\SkinForm.pdb
+D:\练习\FishSolution\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\练习\FishSolution\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\练习\FishSolution\SkinForm\obj\Debug\SkinForm.dll
+D:\练习\FishSolution\SkinForm\obj\Debug\SkinForm.pdb
+D:\练习\FishSolution - 副本\Setup\SkinForm.dll
+D:\练习\FishSolution - 副本\Setup\SkinForm.pdb
+D:\练习\FishSolution - 副本\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\练习\FishSolution - 副本\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\练习\FishSolution - 副本\SkinForm\obj\Debug\SkinForm.dll
+D:\练习\FishSolution - 副本\SkinForm\obj\Debug\SkinForm.pdb
+D:\练习\FishSolution\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+D:\Project data\zhengdong\Setup\SkinForm.dll
+D:\Project data\zhengdong\Setup\SkinForm.pdb
+D:\Project data\zhengdong\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+D:\Project data\zhengdong\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\Project data\zhengdong\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\Project data\zhengdong\SkinForm\obj\Debug\SkinForm.dll
+D:\Project data\zhengdong\SkinForm\obj\Debug\SkinForm.pdb
+C:\Users\Administrator\Desktop\新建文件夹\Setup\SkinForm.dll
+C:\Users\Administrator\Desktop\新建文件夹\Setup\SkinForm.pdb
+C:\Users\Administrator\Desktop\新建文件夹\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+C:\Users\Administrator\Desktop\新建文件夹\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\新建文件夹\SkinForm\obj\Debug\SkinForm.dll
+C:\Users\Administrator\Desktop\新建文件夹\SkinForm\obj\Debug\SkinForm.pdb
+C:\Users\Administrator\Desktop\zhengdong_5.04.下\Setup\SkinForm.dll
+C:\Users\Administrator\Desktop\zhengdong_5.04.下\Setup\SkinForm.pdb
+C:\Users\Administrator\Desktop\zhengdong_5.04.下\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+C:\Users\Administrator\Desktop\zhengdong_5.04.下\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\zhengdong_5.04.下\SkinForm\obj\Debug\SkinForm.dll
+C:\Users\Administrator\Desktop\zhengdong_5.04.下\SkinForm\obj\Debug\SkinForm.pdb
+C:\Users\Administrator\Desktop\zhengdong\Setup\SkinForm.dll
+C:\Users\Administrator\Desktop\zhengdong\Setup\SkinForm.pdb
+C:\Users\Administrator\Desktop\zhengdong\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+C:\Users\Administrator\Desktop\zhengdong\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\zhengdong\SkinForm\obj\Debug\SkinForm.dll
+C:\Users\Administrator\Desktop\zhengdong\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.16\Setup\SkinForm.dll
+E:\工作\源代码\zhengdong_5.16\Setup\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.16\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\源代码\zhengdong_5.16\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\源代码\zhengdong_5.16\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\源代码\zhengdong_5.16\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.21上\Setup\SkinForm.dll
+E:\工作\源代码\zhengdong_5.21上\Setup\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.21上\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\源代码\zhengdong_5.21上\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\源代码\zhengdong_5.21上\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\源代码\zhengdong_5.21上\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.25\Setup\SkinForm.dll
+E:\工作\源代码\zhengdong_5.25\Setup\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.25\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\源代码\zhengdong_5.25\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\源代码\zhengdong_5.25\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\源代码\zhengdong_5.25\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.30\Setup\SkinForm.dll
+E:\工作\源代码\zhengdong_5.30\Setup\SkinForm.pdb
+E:\工作\源代码\zhengdong_5.30\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\源代码\zhengdong_5.30\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\源代码\zhengdong_5.30\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\源代码\zhengdong_5.30\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\源代码\zhengdong_06.01\Setup\SkinForm.dll
+E:\工作\源代码\zhengdong_06.01\Setup\SkinForm.pdb
+E:\工作\源代码\zhengdong_06.01\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\源代码\zhengdong_06.01\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\源代码\zhengdong_06.01\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\源代码\zhengdong_06.01\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\源代码\zhengdong_06.01\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\源代码\zhengdong_06.04上1\Setup\SkinForm.dll
+E:\工作\源代码\zhengdong_06.04上1\Setup\SkinForm.pdb
+E:\工作\源代码\zhengdong_06.04上1\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\源代码\zhengdong_06.04上1\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\源代码\zhengdong_06.04上1\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\源代码\zhengdong_06.04上1\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\新源代码\shanghaizhengdong_06.11\Setup\SkinForm.dll
+E:\工作\新源代码\shanghaizhengdong_06.11\Setup\SkinForm.pdb
+E:\工作\新源代码\shanghaizhengdong_06.11\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\新源代码\shanghaizhengdong_06.11\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\新源代码\shanghaizhengdong_06.11\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\新源代码\shanghaizhengdong_06.11\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\新源代码\shanghaizhengdong_06.11\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\新源代码\shanghaizhengdong_06.14\Setup\SkinForm.dll
+E:\工作\新源代码\shanghaizhengdong_06.14\Setup\SkinForm.pdb
+E:\工作\新源代码\shanghaizhengdong_06.14\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\新源代码\shanghaizhengdong_06.14\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\新源代码\shanghaizhengdong_06.14\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\新源代码\shanghaizhengdong_06.14\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\新源代码\shanghaizhengdong_06.14\SkinForm\obj\Debug\SkinForm.pdb
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\Setup\SkinForm.dll
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\Setup\SkinForm.pdb
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\SkinForm\obj\Debug\SkinForm.dll
+C:\Users\Administrator\Desktop\shanghaizhengdong\shanghaizhengdong_06.21\SkinForm\obj\Debug\SkinForm.pdb
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\Setup\SkinForm.dll
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\Setup\SkinForm.pdb
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\SkinForm\obj\Debug\SkinForm.dll
+C:\Users\Administrator\Desktop\zhengdong\zhengdong\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\新源代码\zhengdong_07.06上\Setup\SkinForm.dll
+E:\工作\新源代码\zhengdong_07.06上\Setup\SkinForm.pdb
+E:\工作\新源代码\zhengdong_07.06上\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\新源代码\zhengdong_07.06上\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\新源代码\zhengdong_07.06上\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\新源代码\zhengdong_07.06上\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\新源代码\zhengdong_07.06上\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\7月 代码\zhengdong_7.30-1\Setup\SkinForm.dll
+E:\工作\7月 代码\zhengdong_7.30-1\Setup\SkinForm.pdb
+E:\工作\7月 代码\zhengdong_7.30-1\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\7月 代码\zhengdong_7.30-1\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\7月 代码\zhengdong_7.30-1\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\7月 代码\zhengdong_7.30-1\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\7月 代码\zhengdong_7.30-1\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\8月\zhengdong_2018.08.20-1\Setup\SkinForm.dll
+E:\工作\8月\zhengdong_2018.08.20-1\Setup\SkinForm.pdb
+E:\工作\8月\zhengdong_2018.08.20-1\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\8月\zhengdong_2018.08.20-1\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\8月\zhengdong_2018.08.20-1\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\8月\zhengdong_2018.08.20-1\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\8月\zhengdong_2018.08.20-1\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\9月\zhengdong_2018.09.04-1\Setup\SkinForm.dll
+E:\工作\9月\zhengdong_2018.09.04-1\Setup\SkinForm.pdb
+E:\工作\9月\zhengdong_2018.09.04-1\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+E:\工作\9月\zhengdong_2018.09.04-1\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\9月\zhengdong_2018.09.04-1\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\9月\zhengdong_2018.09.04-1\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\9月\zhengdong_2018.09.04-1\SkinForm\obj\Debug\SkinForm.pdb
+D:\ProjectData\zhengdong\zhengdong_\Setup\SkinForm.dll
+D:\ProjectData\zhengdong\zhengdong_\Setup\SkinForm.pdb
+D:\ProjectData\zhengdong\zhengdong_\SkinForm\obj\Debug\SkinForm.csprojResolveAssemblyReference.cache
+D:\ProjectData\zhengdong\zhengdong_\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+D:\ProjectData\zhengdong\zhengdong_\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+D:\ProjectData\zhengdong\zhengdong_\SkinForm\obj\Debug\SkinForm.dll
+D:\ProjectData\zhengdong\zhengdong_\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\9月\zhengdong_2018.09-18-1\Setup\SkinForm.dll
+E:\工作\9月\zhengdong_2018.09-18-1\Setup\SkinForm.pdb
+E:\工作\9月\zhengdong_2018.09-18-1\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\9月\zhengdong_2018.09-18-1\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\9月\zhengdong_2018.09-18-1\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\9月\zhengdong_2018.09-18-1\SkinForm\obj\Debug\SkinForm.pdb
+E:\工作\9月\zhengdong_2018.09-30-1\Setup\SkinForm.dll
+E:\工作\9月\zhengdong_2018.09-30-1\Setup\SkinForm.pdb
+E:\工作\9月\zhengdong_2018.09-30-1\SkinForm\obj\Debug\SkinForm.SkinPictureForm.resources
+E:\工作\9月\zhengdong_2018.09-30-1\SkinForm\obj\Debug\SkinForm.csproj.GenerateResource.Cache
+E:\工作\9月\zhengdong_2018.09-30-1\SkinForm\obj\Debug\SkinForm.dll
+E:\工作\9月\zhengdong_2018.09-30-1\SkinForm\obj\Debug\SkinForm.pdb

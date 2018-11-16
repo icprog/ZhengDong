@@ -1,0 +1,22 @@
+11:43:31.428    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormReceiptRecord(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 398
+   在 FishBll.Bll.ProcessStateBll.GetFormReceiptRecord(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 99
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 92
+11:43:31.482 Subquery returns more than 1 row
+11:44:14.163    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormReceiptRecord(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 398
+   在 FishBll.Bll.ProcessStateBll.GetFormReceiptRecord(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 99
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 92
+11:44:14.164 Subquery returns more than 1 row
+12:05:02.296    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormReceiptRecord(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 398
+   在 FishBll.Bll.ProcessStateBll.GetFormReceiptRecord(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 99
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 92
+12:05:02.297 Subquery returns more than 1 row
+13:44:01.127  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133
+13:45:16.964  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 D:\练习\FishSolution\FishClient\UserManager.cs:行号 133

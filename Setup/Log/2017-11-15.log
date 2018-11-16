@@ -1,0 +1,24 @@
+14:09:01.743    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 132
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 49
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+14:09:01.783 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select count(1) from t_paymentrequisition where applyCode='40C17110016'' at line 1
+14:10:27.736    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 132
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 49
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+14:10:27.791 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select count(1) from t_paymentrequisition where applyCode='40C17110016'' at line 1
+14:11:25.827    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 132
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 49
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+14:11:25.829 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select count(1) from t_paymentrequisition where applyCode='40C17110016'' at line 1
+14:52:52.413    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 132
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 49
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+14:52:52.414 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select count(1) from t_paymentrequisition where applyCode='40C17110016'' at line 1

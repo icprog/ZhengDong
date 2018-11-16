@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSet>
+  <xs:schema id="DataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="detail">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="product" type="xs:string" minOccurs="0" />
+                <xs:element name="specification" type="xs:string" minOccurs="0" />
+                <xs:element name="shipname" type="xs:string" minOccurs="0" />
+                <xs:element name="billofgoods" type="xs:string" minOccurs="0" />
+                <xs:element name="tons" type="xs:string" minOccurs="0" />
+                <xs:element name="packages" type="xs:string" minOccurs="0" />
+				<xs:element name="contractno" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+
+			<xs:element name="contractdetail">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="no" type="xs:string" minOccurs="0" />
+                <xs:element name="productname" type="xs:string" minOccurs="0" />
+                <xs:element name="specification" type="xs:string" minOccurs="0" />
+                <xs:element name="weight" type="xs:string" minOccurs="0" />
+                <xs:element name="quantity" type="xs:string" minOccurs="0" />
+                <xs:element name="unitprice" type="xs:string" minOccurs="0" />
+				<xs:element name="money" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  
+   <detail>
+    <product>白鱼粉</product>
+    <specification>GP23201</specification>
+	<shipname>和谐号</shipname>
+    <billofgoods>S20152214</billofgoods>
+    <tons>100吨</tons>
+    <packages>100.256</packages>
+	<contractnoseq>20011</contractnoseq>
+  </detail>
+  <detail>
+    <product>金鱼粉</product>
+    <specification>GP23201</specification>
+	<shipname>和谐号</shipname>
+    <billofgoods>S20152214</billofgoods>
+    <tons>100吨</tons>
+    <packages>10</packages>
+	<contractnoseq>20011</contractnoseq>
+  </detail>
+<detail>
+    <product>金鱼粉</product>
+    <specification>GP23201</specification>
+	<shipname>和谐号</shipname>
+    <billofgoods>S20152214</billofgoods>
+    <tons>100吨</tons>
+    <packages>10</packages>
+	<contractnoseq>20011</contractnoseq>
+  </detail>
+<detail>
+    <product>金鱼粉</product>
+    <specification>GP23201</specification>
+	<shipname>和谐号</shipname>
+    <billofgoods>S20152214</billofgoods>
+    <tons>100吨</tons>
+    <packages>10</packages>
+	<contractnoseq>20011</contractnoseq>
+  </detail>
+
+
+ <contractdetail>
+	<no>1</no>
+	<productname>鱼粉</productname>
+	<specification>萨法</specification>
+	<weight>234.33</weight>
+	<quantity>100</quantity>
+	<unitprice>2300.44</unitprice>
+    <money>444400.00</money>
+ </contractdetail>
+  <contractdetail>
+	<no>2</no>
+	<productname>鱼粉</productname>
+	<specification>萨法</specification>
+	<weight>234.33</weight>
+	<quantity>100</quantity>
+	<unitprice>2300.44</unitprice>
+    <money>444400.00</money>
+ </contractdetail>
+  <contractdetail>
+	<no>3</no>
+	<productname>鱼粉</productname>
+	<specification>萨法</specification>
+	<weight>234.33</weight>
+	<quantity>100</quantity>
+	<unitprice>2300.44</unitprice>
+    <money>444400.00</money>
+ </contractdetail>
+
+  </DataSet>

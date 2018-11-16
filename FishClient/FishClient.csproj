@@ -1,0 +1,2021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8D938F8-CD1C-48CA-8517-4ABA76E7DF36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FishClient</RootNamespace>
+    <AssemblyName>FishClient</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Setup\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport, Version=2014.2.3.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\FastReports\FastReport.Net Demo\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2013.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\通策\一牙牙管家客户端\TCHISShell\ThirdPart\FastReport For Net2.0\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2014.2.3.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Install, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\FastReport.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web, Version=2013.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\FastReport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\ThirdPart\NPOI 2.1.3 binary\dotnet2\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\ThirdPart\NPOI 2.1.3 binary\dotnet2\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Setup\Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddShuiYin.cs" />
+    <Compile Include="AnnouncementRemindThread.cs" />
+    <Compile Include="AnnouncementThread.cs" />
+    <Compile Include="Contract\FormContractList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\FormContractList.Designer.cs">
+      <DependentUpon>FormContractList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\FormContractTakeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\FormContractTakeDetail.Designer.cs">
+      <DependentUpon>FormContractTakeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\FormFuturesContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\FormFuturesContract.Designer.cs">
+      <DependentUpon>FormFuturesContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\FormProductContract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\FormProductContract1.Designer.cs">
+      <DependentUpon>FormProductContract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\FormProductContract2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\FormProductContract2.Designer.cs">
+      <DependentUpon>FormProductContract2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportUtil.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccountsReceivable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccountsReceivable.Designer.cs">
+      <DependentUpon>FormAccountsReceivable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBarnAssociation .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarnAssociation .Designer.cs">
+      <DependentUpon>FormBarnAssociation .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBatchSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBatchSheet.Designer.cs">
+      <DependentUpon>FormBatchSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBatchSheetQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBatchSheetQuery.Designer.cs">
+      <DependentUpon>FormBatchSheetQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBilloflading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilloflading.Designer.cs">
+      <DependentUpon>FormBilloflading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBillofladingTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBillofladingTable.Designer.cs">
+      <DependentUpon>FormBillofladingTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBilloftable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilloftable.Designer.cs">
+      <DependentUpon>FormBilloftable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCargoFeedbackSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCargoFeedbackSheet.Designer.cs">
+      <DependentUpon>FormCargoFeedbackSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCargoFeedbackSheetTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCargoFeedbackSheetTable.Designer.cs">
+      <DependentUpon>FormCargoFeedbackSheetTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContractProcessingSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContractProcessingSheet.Designer.cs">
+      <DependentUpon>FormContractProcessingSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomStandardTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomStandardTable.Designer.cs">
+      <DependentUpon>FormCustomStandardTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeliveredManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeliveredManagement.Designer.cs">
+      <DependentUpon>FormDeliveredManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiscWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiscWarehouse.Designer.cs">
+      <DependentUpon>FormDiscWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisposeofcomments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisposeofcomments.Designer.cs">
+      <DependentUpon>FormDisposeofcomments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEnterWarehouseReceipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEnterWarehouseReceipts.Designer.cs">
+      <DependentUpon>FormEnterWarehouseReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntry.Designer.cs">
+      <DependentUpon>FormEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinishedInventoryTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinishedInventoryTable.Designer.cs">
+      <DependentUpon>FormFinishedInventoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinishedProductAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinishedProductAssociation.Designer.cs">
+      <DependentUpon>FormFinishedProductAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinishedProList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinishedProList.Designer.cs">
+      <DependentUpon>FormFinishedProList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinishedProListQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinishedProListQuery.Designer.cs">
+      <DependentUpon>FormFinishedProListQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHomemadeWarehouseTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHomemadeWarehouseTable.Designer.cs">
+      <DependentUpon>FormHomemadeWarehouseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngredientAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngredientAssociation.Designer.cs">
+      <DependentUpon>FormIngredientAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngredientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngredientList.Designer.cs">
+      <DependentUpon>FormIngredientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formingredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formingredients.Designer.cs">
+      <DependentUpon>Formingredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventoryAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventoryAccount.Designer.cs">
+      <DependentUpon>FormInventoryAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJinCangTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJinCangTable.Designer.cs">
+      <DependentUpon>FormJinCangTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewFinish.Designer.cs">
+      <DependentUpon>FormNewFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewFish.Designer.cs">
+      <DependentUpon>FormNewFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewPriWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewPriWarehouse.Designer.cs">
+      <DependentUpon>FormNewPriWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewSelfcontrolWare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewSelfcontrolWare.Designer.cs">
+      <DependentUpon>FormNewSelfcontrolWare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewWarehouseReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewWarehouseReceipt.Designer.cs">
+      <DependentUpon>FormNewWarehouseReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNowCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNowCompany.Designer.cs">
+      <DependentUpon>FormNowCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOnepound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOnepound.Designer.cs">
+      <DependentUpon>FormOnepound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOnepoundTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOnepoundTable.Designer.cs">
+      <DependentUpon>FormOnepoundTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOutboundAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOutboundAssociation.Designer.cs">
+      <DependentUpon>FormOutboundAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOutboundOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOutboundOrder.Designer.cs">
+      <DependentUpon>FormOutboundOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOutboundOrderQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOutboundOrderQuery.Designer.cs">
+      <DependentUpon>FormOutboundOrderQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPackingWeightList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPackingWeightList.Designer.cs">
+      <DependentUpon>FormPackingWeightList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaymentForm.Designer.cs">
+      <DependentUpon>FormPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaymentRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaymentRequisition.Designer.cs">
+      <DependentUpon>FormPaymentRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaymentTabie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaymentTabie.Designer.cs">
+      <DependentUpon>FormPaymentTabie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPoundsingletable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPoundsingletable.Designer.cs">
+      <DependentUpon>FormPoundsingletable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPresaleRContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPresaleRContract.Designer.cs">
+      <DependentUpon>FormPresaleRContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPresaleRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPresaleRequisition.Designer.cs">
+      <DependentUpon>FormPresaleRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddRole.Designer.cs">
+      <DependentUpon>FormAddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdvanceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdvanceQuery.Designer.cs">
+      <DependentUpon>FormAdvanceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCallRecordOfCompnay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCallRecordOfCompnay.Designer.cs">
+      <DependentUpon>FormCallRecordOfCompnay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCallRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCallRecords.Designer.cs">
+      <DependentUpon>FormCallRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCallRecordsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCallRecordsReport.Designer.cs">
+      <DependentUpon>FormCallRecordsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCallRecordsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCallRecordsTable.Designer.cs">
+      <DependentUpon>FormCallRecordsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheck.Designer.cs">
+      <DependentUpon>FormCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompany.Designer.cs">
+      <DependentUpon>FormCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompanyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompanyList.Designer.cs">
+      <DependentUpon>FormCompanyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCondition.Designer.cs">
+      <DependentUpon>FormCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerAnalysisReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerAnalysisReport.Designer.cs">
+      <DependentUpon>FormCustomerAnalysisReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerAnalysisTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerAnalysisTable.Designer.cs">
+      <DependentUpon>FormCustomerAnalysisTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditDict.Designer.cs">
+      <DependentUpon>FormEditDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinish.Designer.cs">
+      <DependentUpon>FormFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFish.Designer.cs">
+      <DependentUpon>FormFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFoodOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFoodOut.Designer.cs">
+      <DependentUpon>FormFoodOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFunCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFunCode.Designer.cs">
+      <DependentUpon>FormFunCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGB.Designer.cs">
+      <DependentUpon>FormGB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHomemadeStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHomemadeStorage.Designer.cs">
+      <DependentUpon>FormHomemadeStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImage.Designer.cs">
+      <DependentUpon>FormImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventory.Designer.cs">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLinkman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLinkman.Designer.cs">
+      <DependentUpon>FormLinkman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLinkmanList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLinkmanList.Designer.cs">
+      <DependentUpon>FormLinkmanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoadingBillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadingBillList.Designer.cs">
+      <DependentUpon>FormLoadingBillList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoadingBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadingBills.Designer.cs">
+      <DependentUpon>FormLoadingBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuBase.Designer.cs">
+      <DependentUpon>FormMenuBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNavigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNavigation.Designer.cs">
+      <DependentUpon>FormNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPresaleRequisitionCodition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPresaleRequisitionCodition.Designer.cs">
+      <DependentUpon>FormPresaleRequisitionCodition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPresaleTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPresaleTable.Designer.cs">
+      <DependentUpon>FormPresaleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPricingAssociation .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPricingAssociation .Designer.cs">
+      <DependentUpon>FormPricingAssociation .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPriWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPriWarehouse.Designer.cs">
+      <DependentUpon>FormPriWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessState.Designer.cs">
+      <DependentUpon>FormProcessState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessStateForMacOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessStateForMacOne.Designer.cs">
+      <DependentUpon>FormProcessStateForMacOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessStateForPurOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessStateForPurOne.Designer.cs">
+      <DependentUpon>FormProcessStateForPurOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessStateForPurTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessStateForPurTwo.Designer.cs">
+      <DependentUpon>FormProcessStateForPurTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessStateForSaleOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessStateForSaleOne.Designer.cs">
+      <DependentUpon>FormProcessStateForSaleOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessStateForSaleTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessStateForSaleTwo.Designer.cs">
+      <DependentUpon>FormProcessStateForSaleTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcurementAssociation .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcurementAssociation .Designer.cs">
+      <DependentUpon>FormProcurementAssociation .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgram.Designer.cs">
+      <DependentUpon>FormProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseAppFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseAppFish.Designer.cs">
+      <DependentUpon>FormPurchaseAppFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseAppFishInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseAppFishInfo.Designer.cs">
+      <DependentUpon>FormPurchaseAppFishInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseApplication.Designer.cs">
+      <DependentUpon>FormPurchaseApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseContractTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseContractTable.Designer.cs">
+      <DependentUpon>FormPurchaseContractTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseDataSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseDataSheet.Designer.cs">
+      <DependentUpon>FormPurchaseDataSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseRequisition.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseRequisition.cs.Designer.cs">
+      <DependentUpon>FormPurchaseRequisition.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseSelectionTable .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseSelectionTable .Designer.cs">
+      <DependentUpon>FormPurchaseSelectionTable .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchaseWarehousing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchaseWarehousing.Designer.cs">
+      <DependentUpon>FormPurchaseWarehousing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchasingSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchasingSales.Designer.cs">
+      <DependentUpon>FormPurchasingSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurcurementContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurcurementContract.Designer.cs">
+      <DependentUpon>FormPurcurementContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPushMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPushMessage.Designer.cs">
+      <DependentUpon>FormPushMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQueryCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQueryCondition.Designer.cs">
+      <DependentUpon>FormQueryCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuotationPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuotationPriceList.Designer.cs">
+      <DependentUpon>FormQuotationPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuotationPriceListQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuotationPriceListQuery.Designer.cs">
+      <DependentUpon>FormQuotationPriceListQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuote.Designer.cs">
+      <DependentUpon>FormQuote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuoteDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuoteDetail.Designer.cs">
+      <DependentUpon>FormQuoteDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuotePricingTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuotePricingTable.Designer.cs">
+      <DependentUpon>FormQuotePricingTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReceiptRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReceiptRecord.Designer.cs">
+      <DependentUpon>FormReceiptRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReceiptRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReceiptRecordForm.Designer.cs">
+      <DependentUpon>FormReceiptRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReceiptRecordtable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReceiptRecordtable.Designer.cs">
+      <DependentUpon>FormReceiptRecordtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReductionClause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReductionClause.Designer.cs">
+      <DependentUpon>FormReductionClause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRemind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRemind.Designer.cs">
+      <DependentUpon>FormRemind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRemindMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRemindMessage.Designer.cs">
+      <DependentUpon>FormRemindMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRequredForecastReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRequredForecastReport.Designer.cs">
+      <DependentUpon>FormRequredForecastReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReturnAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReturnAssociation.Designer.cs">
+      <DependentUpon>FormReturnAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReturnReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReturnReceipt.Designer.cs">
+      <DependentUpon>FormReturnReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReturnReceiptQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReturnReceiptQuery.Designer.cs">
+      <DependentUpon>FormReturnReceiptQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReturnsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReturnsTable.Designer.cs">
+      <DependentUpon>FormReturnsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReview.Designer.cs">
+      <DependentUpon>FormReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoles.Designer.cs">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaleDetail.Designer.cs">
+      <DependentUpon>FormSaleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaleRecordReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaleRecordReport.Designer.cs">
+      <DependentUpon>FormSaleRecordReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesAssessment.Designer.cs">
+      <DependentUpon>FormSalesAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesOutOfTheLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesOutOfTheLibrary.Designer.cs">
+      <DependentUpon>FormSalesOutOfTheLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesRContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesRContract.Designer.cs">
+      <DependentUpon>FormSalesRContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesRequisition.Designer.cs">
+      <DependentUpon>FormSalesRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesRequisitionCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesRequisitionCondition.Designer.cs">
+      <DependentUpon>FormSalesRequisitionCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesTables.Designer.cs">
+      <DependentUpon>FormSalesTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSampleSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSampleSingle.Designer.cs">
+      <DependentUpon>FormSampleSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelfcontrolWare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelfcontrolWare.Designer.cs">
+      <DependentUpon>FormSelfcontrolWare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelfMake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelfMake.Designer.cs">
+      <DependentUpon>FormSelfMake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelftStorageFlowingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelftStorageFlowingReport.Designer.cs">
+      <DependentUpon>FormSelftStorageFlowingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetPresaleRequisiton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetPresaleRequisiton.Designer.cs">
+      <DependentUpon>FormSetPresaleRequisiton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetReview.Designer.cs">
+      <DependentUpon>FormSetReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShippingRecords .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShippingRecords .Designer.cs">
+      <DependentUpon>FormShippingRecords .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShippingRecordsedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShippingRecordsedit.Designer.cs">
+      <DependentUpon>FormShippingRecordsedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpotGoodsQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpotGoodsQuery.Designer.cs">
+      <DependentUpon>FormSpotGoodsQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatement.Designer.cs">
+      <DependentUpon>FormStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStorageBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStorageBills.Designer.cs">
+      <DependentUpon>FormStorageBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStorageOfRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStorageOfRequisition.Designer.cs">
+      <DependentUpon>FormStorageOfRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStorageOfRequisitionQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStorageOfRequisitionQuery.Designer.cs">
+      <DependentUpon>FormStorageOfRequisitionQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStorageReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStorageReport.Designer.cs">
+      <DependentUpon>FormStorageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSubProcurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubProcurement.Designer.cs">
+      <DependentUpon>FormSubProcurement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSystemDataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSystemDataSet.Designer.cs">
+      <DependentUpon>FormSystemDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTheproblemsheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheproblemsheet.Designer.cs">
+      <DependentUpon>FormTheproblemsheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTheproblemsheetTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheproblemsheetTable.Designer.cs">
+      <DependentUpon>FormTheproblemsheetTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTotalDataSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTotalDataSheet.Designer.cs">
+      <DependentUpon>FormTotalDataSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserList.Designer.cs">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserRole.Designer.cs">
+      <DependentUpon>FormUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarehouseReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarehouseReceipt.Designer.cs">
+      <DependentUpon>FormWarehouseReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarehouseReceiptAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarehouseReceiptAnnex.Designer.cs">
+      <DependentUpon>FormWarehouseReceiptAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarehouseReceiptQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarehouseReceiptQuery.Designer.cs">
+      <DependentUpon>FormWarehouseReceiptQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarehousereceiptTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarehousereceiptTable.Designer.cs">
+      <DependentUpon>FormWarehousereceiptTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarehousingAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarehousingAssociation.Designer.cs">
+      <DependentUpon>FormWarehousingAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarn.Designer.cs">
+      <DependentUpon>FormWarn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromInquiry.Designer.cs">
+      <DependentUpon>FromInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromInquirySet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromInquirySet.Designer.cs">
+      <DependentUpon>FromInquirySet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitDataUtil.cs" />
+    <Compile Include="Megres.cs" />
+    <Compile Include="PictureOpreation.cs" />
+    <Compile Include="PrintUtil.cs" />
+    <Compile Include="ProcessControl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormProductDataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductDataSet.Designer.cs">
+      <DependentUpon>FormProductDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseRequisitionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseRequisitionEdit.Designer.cs">
+      <DependentUpon>PurchaseRequisitionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemindObject.cs" />
+    <Compile Include="ThreadManager.cs" />
+    <Compile Include="UIControls\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControls\CalendarColumn.cs" />
+    <Compile Include="UIControls\CompanyCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\CompanyCondition.Designer.cs">
+      <DependentUpon>CompanyCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FilterItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishConfirmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishConfirmControl.Designer.cs">
+      <DependentUpon>FishConfirmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishCompositionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishCompositionControl.Designer.cs">
+      <DependentUpon>FishCompositionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishInfoControl.Designer.cs">
+      <DependentUpon>FishInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishQuoteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishQuoteControl.Designer.cs">
+      <DependentUpon>FishQuoteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishSaleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishSaleControl.Designer.cs">
+      <DependentUpon>FishSaleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishSelfControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishSelfControl.Designer.cs">
+      <DependentUpon>FishSelfControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishSpotGoodsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishSpotGoodsControl.Designer.cs">
+      <DependentUpon>FishSpotGoodsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\FishSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\FishSummaryControl.Designer.cs">
+      <DependentUpon>FishSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\InputControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\InputControl.Designer.cs">
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\TimeColumn.cs" />
+    <Compile Include="UIControls\ToolStripMenuItemEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIForms\CargoFeedbackSheetCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\CargoFeedbackSheetCondition.Designer.cs">
+      <DependentUpon>CargoFeedbackSheetCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormBillofladingCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormBillofladingCondition.Designer.cs">
+      <DependentUpon>FormBillofladingCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormCallRecordsCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormCallRecordsCondition.Designer.cs">
+      <DependentUpon>FormCallRecordsCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormContractCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormContractCondition.Designer.cs">
+      <DependentUpon>FormContractCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormContractProcessingSheetConditicon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormContractProcessingSheetConditicon.Designer.cs">
+      <DependentUpon>FormContractProcessingSheetConditicon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormCustomerCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormCustomerCondition.Designer.cs">
+      <DependentUpon>FormCustomerCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormDisposeofcommentsCodition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormDisposeofcommentsCodition.Designer.cs">
+      <DependentUpon>FormDisposeofcommentsCodition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormEnterWarehouseReceiptsCodition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormEnterWarehouseReceiptsCodition.Designer.cs">
+      <DependentUpon>FormEnterWarehouseReceiptsCodition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormEntryContion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormEntryContion.Designer.cs">
+      <DependentUpon>FormEntryContion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormFishCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormFishCondition.Designer.cs">
+      <DependentUpon>FormFishCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormGBList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormGBList.Designer.cs">
+      <DependentUpon>FormGBList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormModifyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormModifyPassword.Designer.cs">
+      <DependentUpon>FormModifyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormOnepoundCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormOnepoundCondition.Designer.cs">
+      <DependentUpon>FormOnepoundCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormSalesRContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormSalesRContract.Designer.cs">
+      <DependentUpon>FormSalesRContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormSampleSingleCodition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormSampleSingleCodition.Designer.cs">
+      <DependentUpon>FormSampleSingleCodition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormSelectCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormSelectCustomer.Designer.cs">
+      <DependentUpon>FormSelectCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormSelectFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormSelectFish.Designer.cs">
+      <DependentUpon>FormSelectFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormSetColumnWidth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormSetColumnWidth.Designer.cs">
+      <DependentUpon>FormSetColumnWidth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormTheproblemsheetCodition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormTheproblemsheetCodition.Designer.cs">
+      <DependentUpon>FormTheproblemsheetCodition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\FormZoomImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\FormZoomImage.Designer.cs">
+      <DependentUpon>FormZoomImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\PurchaseApplicationCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\PurchaseApplicationCondition.Designer.cs">
+      <DependentUpon>PurchaseApplicationCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.cs" />
+    <Compile Include="FormConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirm.Designer.cs">
+      <DependentUpon>FormConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpot.Designer.cs">
+      <DependentUpon>FormSpot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpotDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpotDetail.Designer.cs">
+      <DependentUpon>FormSpotDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelfSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelfSale.Designer.cs">
+      <DependentUpon>FormSelfSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelfSaleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelfSaleDetail.Designer.cs">
+      <DependentUpon>FormSelfSaleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelfMakeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelfMakeDetail.Designer.cs">
+      <DependentUpon>FormSelfMakeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddFunCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddFunCode.Designer.cs">
+      <DependentUpon>FormAddFunCode.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Contract\FormContractList.resx">
+      <DependentUpon>FormContractList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\FormContractTakeDetail.resx">
+      <DependentUpon>FormContractTakeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\FormFuturesContract.resx">
+      <DependentUpon>FormFuturesContract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\FormProductContract1.resx">
+      <DependentUpon>FormProductContract1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\FormProductContract2.resx">
+      <DependentUpon>FormProductContract2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccountsReceivable.resx">
+      <DependentUpon>FormAccountsReceivable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBarnAssociation .resx">
+      <DependentUpon>FormBarnAssociation .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBatchSheet.resx">
+      <DependentUpon>FormBatchSheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBatchSheetQuery.resx">
+      <DependentUpon>FormBatchSheetQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilloflading.resx">
+      <DependentUpon>FormBilloflading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBillofladingTable.resx">
+      <DependentUpon>FormBillofladingTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilloftable.resx">
+      <DependentUpon>FormBilloftable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCargoFeedbackSheet.resx">
+      <DependentUpon>FormCargoFeedbackSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCargoFeedbackSheetTable.resx">
+      <DependentUpon>FormCargoFeedbackSheetTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContractProcessingSheet.resx">
+      <DependentUpon>FormContractProcessingSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomStandardTable.resx">
+      <DependentUpon>FormCustomStandardTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeliveredManagement.resx">
+      <DependentUpon>FormDeliveredManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiscWarehouse.resx">
+      <DependentUpon>FormDiscWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisposeofcomments.resx">
+      <DependentUpon>FormDisposeofcomments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEnterWarehouseReceipts.resx">
+      <DependentUpon>FormEnterWarehouseReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntry.resx">
+      <DependentUpon>FormEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinishedInventoryTable.resx">
+      <DependentUpon>FormFinishedInventoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinishedProductAssociation.resx">
+      <DependentUpon>FormFinishedProductAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinishedProList.resx">
+      <DependentUpon>FormFinishedProList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinishedProListQuery.resx">
+      <DependentUpon>FormFinishedProListQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHomemadeWarehouseTable.resx">
+      <DependentUpon>FormHomemadeWarehouseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngredientAssociation.resx">
+      <DependentUpon>FormIngredientAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngredientList.resx">
+      <DependentUpon>FormIngredientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formingredients.resx">
+      <DependentUpon>Formingredients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventoryAccount.resx">
+      <DependentUpon>FormInventoryAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJinCangTable.resx">
+      <DependentUpon>FormJinCangTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewFinish.resx">
+      <DependentUpon>FormNewFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewFish.resx">
+      <DependentUpon>FormNewFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewPriWarehouse.resx">
+      <DependentUpon>FormNewPriWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewSelfcontrolWare.resx">
+      <DependentUpon>FormNewSelfcontrolWare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewWarehouseReceipt.resx">
+      <DependentUpon>FormNewWarehouseReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNowCompany.resx">
+      <DependentUpon>FormNowCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOnepound.resx">
+      <DependentUpon>FormOnepound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOnepoundTable.resx">
+      <DependentUpon>FormOnepoundTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOutboundAssociation.resx">
+      <DependentUpon>FormOutboundAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOutboundOrder.resx">
+      <DependentUpon>FormOutboundOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOutboundOrderQuery.resx">
+      <DependentUpon>FormOutboundOrderQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPackingWeightList.resx">
+      <DependentUpon>FormPackingWeightList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaymentForm.resx">
+      <DependentUpon>FormPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaymentRequisition.resx">
+      <DependentUpon>FormPaymentRequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaymentTabie.resx">
+      <DependentUpon>FormPaymentTabie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPoundsingletable.resx">
+      <DependentUpon>FormPoundsingletable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPresaleRContract.resx">
+      <DependentUpon>FormPresaleRContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPresaleRequisition.resx">
+      <DependentUpon>FormPresaleRequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddRole.resx">
+      <DependentUpon>FormAddRole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdvanceQuery.resx">
+      <DependentUpon>FormAdvanceQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCallRecordOfCompnay.resx">
+      <DependentUpon>FormCallRecordOfCompnay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCallRecords.resx">
+      <DependentUpon>FormCallRecords.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCallRecordsReport.resx">
+      <DependentUpon>FormCallRecordsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCallRecordsTable.resx">
+      <DependentUpon>FormCallRecordsTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheck.resx">
+      <DependentUpon>FormCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompany.resx">
+      <DependentUpon>FormCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompanyList.resx">
+      <DependentUpon>FormCompanyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCondition.resx">
+      <DependentUpon>FormCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerAnalysisReport.resx">
+      <DependentUpon>FormCustomerAnalysisReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerAnalysisTable.resx">
+      <DependentUpon>FormCustomerAnalysisTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDict.resx">
+      <DependentUpon>FormEditDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinish.resx">
+      <DependentUpon>FormFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFish.resx">
+      <DependentUpon>FormFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFoodOut.resx">
+      <DependentUpon>FormFoodOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFunCode.resx">
+      <DependentUpon>FormFunCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGB.resx">
+      <DependentUpon>FormGB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHomemadeStorage.resx">
+      <DependentUpon>FormHomemadeStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImage.resx">
+      <DependentUpon>FormImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventory.resx">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLinkman.resx">
+      <DependentUpon>FormLinkman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLinkmanList.resx">
+      <DependentUpon>FormLinkmanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadingBillList.resx">
+      <DependentUpon>FormLoadingBillList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadingBills.resx">
+      <DependentUpon>FormLoadingBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuBase.resx">
+      <DependentUpon>FormMenuBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNavigation.resx">
+      <DependentUpon>FormNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPresaleRequisitionCodition.resx">
+      <DependentUpon>FormPresaleRequisitionCodition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPresaleTable.resx">
+      <DependentUpon>FormPresaleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPricingAssociation .resx">
+      <DependentUpon>FormPricingAssociation .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPriWarehouse.resx">
+      <DependentUpon>FormPriWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessState.resx">
+      <DependentUpon>FormProcessState.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessStateForMacOne.resx">
+      <DependentUpon>FormProcessStateForMacOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessStateForPurOne.resx">
+      <DependentUpon>FormProcessStateForPurOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessStateForPurTwo.resx">
+      <DependentUpon>FormProcessStateForPurTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessStateForSaleOne.resx">
+      <DependentUpon>FormProcessStateForSaleOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessStateForSaleTwo.resx">
+      <DependentUpon>FormProcessStateForSaleTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcurementAssociation .resx">
+      <DependentUpon>FormProcurementAssociation .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProgram.resx">
+      <DependentUpon>FormProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseAppFish.resx">
+      <DependentUpon>FormPurchaseAppFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseAppFishInfo.resx">
+      <DependentUpon>FormPurchaseAppFishInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseApplication.resx">
+      <DependentUpon>FormPurchaseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseContractTable.resx">
+      <DependentUpon>FormPurchaseContractTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseDataSheet.resx">
+      <DependentUpon>FormPurchaseDataSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseRequisition.cs.resx">
+      <DependentUpon>FormPurchaseRequisition.cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseSelectionTable .resx">
+      <DependentUpon>FormPurchaseSelectionTable .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchaseWarehousing.resx">
+      <DependentUpon>FormPurchaseWarehousing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchasingSales.resx">
+      <DependentUpon>FormPurchasingSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurcurementContract.resx">
+      <DependentUpon>FormPurcurementContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPushMessage.resx">
+      <DependentUpon>FormPushMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQueryCondition.resx">
+      <DependentUpon>FormQueryCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuotationPriceList.resx">
+      <DependentUpon>FormQuotationPriceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuotationPriceListQuery.resx">
+      <DependentUpon>FormQuotationPriceListQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuote.resx">
+      <DependentUpon>FormQuote.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuoteDetail.resx">
+      <DependentUpon>FormQuoteDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuotePricingTable.resx">
+      <DependentUpon>FormQuotePricingTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReceiptRecord.resx">
+      <DependentUpon>FormReceiptRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReceiptRecordForm.resx">
+      <DependentUpon>FormReceiptRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReceiptRecordtable.resx">
+      <DependentUpon>FormReceiptRecordtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReductionClause.resx">
+      <DependentUpon>FormReductionClause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRemind.resx">
+      <DependentUpon>FormRemind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRemindMessage.resx">
+      <DependentUpon>FormRemindMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRequredForecastReport.resx">
+      <DependentUpon>FormRequredForecastReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReturnAssociation.resx">
+      <DependentUpon>FormReturnAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReturnReceipt.resx">
+      <DependentUpon>FormReturnReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReturnReceiptQuery.resx">
+      <DependentUpon>FormReturnReceiptQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReturnsTable.resx">
+      <DependentUpon>FormReturnsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReview.resx">
+      <DependentUpon>FormReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoles.resx">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaleDetail.resx">
+      <DependentUpon>FormSaleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaleRecordReport.resx">
+      <DependentUpon>FormSaleRecordReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesAssessment.resx">
+      <DependentUpon>FormSalesAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesOutOfTheLibrary.resx">
+      <DependentUpon>FormSalesOutOfTheLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesRContract.resx">
+      <DependentUpon>FormSalesRContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesRequisition.resx">
+      <DependentUpon>FormSalesRequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesRequisitionCondition.resx">
+      <DependentUpon>FormSalesRequisitionCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesTables.resx">
+      <DependentUpon>FormSalesTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSampleSingle.resx">
+      <DependentUpon>FormSampleSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelfcontrolWare.resx">
+      <DependentUpon>FormSelfcontrolWare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelfMake.resx">
+      <DependentUpon>FormSelfMake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelftStorageFlowingReport.resx">
+      <DependentUpon>FormSelftStorageFlowingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetPresaleRequisiton.resx">
+      <DependentUpon>FormSetPresaleRequisiton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetReview.resx">
+      <DependentUpon>FormSetReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShippingRecords .resx">
+      <DependentUpon>FormShippingRecords .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShippingRecordsedit.resx">
+      <DependentUpon>FormShippingRecordsedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpotGoodsQuery.resx">
+      <DependentUpon>FormSpotGoodsQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatement.resx">
+      <DependentUpon>FormStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStorageBills.resx">
+      <DependentUpon>FormStorageBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStorageOfRequisition.resx">
+      <DependentUpon>FormStorageOfRequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStorageOfRequisitionQuery.resx">
+      <DependentUpon>FormStorageOfRequisitionQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStorageReport.resx">
+      <DependentUpon>FormStorageReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubProcurement.resx">
+      <DependentUpon>FormSubProcurement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSystemDataSet.resx">
+      <DependentUpon>FormSystemDataSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTheproblemsheet.resx">
+      <DependentUpon>FormTheproblemsheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTheproblemsheetTable.resx">
+      <DependentUpon>FormTheproblemsheetTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTotalDataSheet.resx">
+      <DependentUpon>FormTotalDataSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserList.resx">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserRole.resx">
+      <DependentUpon>FormUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarehouseReceipt.resx">
+      <DependentUpon>FormWarehouseReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarehouseReceiptAnnex.resx">
+      <DependentUpon>FormWarehouseReceiptAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarehouseReceiptQuery.resx">
+      <DependentUpon>FormWarehouseReceiptQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarehousereceiptTable.resx">
+      <DependentUpon>FormWarehousereceiptTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarehousingAssociation.resx">
+      <DependentUpon>FormWarehousingAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarn.resx">
+      <DependentUpon>FormWarn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromInquiry.resx">
+      <DependentUpon>FromInquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromInquirySet.resx">
+      <DependentUpon>FromInquirySet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormProductDataSet.resx">
+      <DependentUpon>FormProductDataSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseRequisitionEdit.resx">
+      <DependentUpon>PurchaseRequisitionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\CompanyCondition.resx">
+      <DependentUpon>CompanyCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FilterItemControl.resx">
+      <DependentUpon>FilterItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishConfirmControl.resx">
+      <DependentUpon>FishConfirmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishCompositionControl.resx">
+      <DependentUpon>FishCompositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishInfoControl.resx">
+      <DependentUpon>FishInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishQuoteControl.resx">
+      <DependentUpon>FishQuoteControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishSaleControl.resx">
+      <DependentUpon>FishSaleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishSelfControl.resx">
+      <DependentUpon>FishSelfControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishSpotGoodsControl.resx">
+      <DependentUpon>FishSpotGoodsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\FishSummaryControl.resx">
+      <DependentUpon>FishSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\InputControl.resx">
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\CargoFeedbackSheetCondition.resx">
+      <DependentUpon>CargoFeedbackSheetCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormBillofladingCondition.resx">
+      <DependentUpon>FormBillofladingCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormCallRecordsCondition.resx">
+      <DependentUpon>FormCallRecordsCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormContractCondition.resx">
+      <DependentUpon>FormContractCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormContractProcessingSheetConditicon.resx">
+      <DependentUpon>FormContractProcessingSheetConditicon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormCustomerCondition.resx">
+      <DependentUpon>FormCustomerCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormDisposeofcommentsCodition.resx">
+      <DependentUpon>FormDisposeofcommentsCodition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormEnterWarehouseReceiptsCodition.resx">
+      <DependentUpon>FormEnterWarehouseReceiptsCodition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormEntryContion.resx">
+      <DependentUpon>FormEntryContion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormFishCondition.resx">
+      <DependentUpon>FormFishCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormGBList.resx">
+      <DependentUpon>FormGBList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormModifyPassword.resx">
+      <DependentUpon>FormModifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormOnepoundCondition.resx">
+      <DependentUpon>FormOnepoundCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormSalesRContract.resx">
+      <DependentUpon>FormSalesRContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormSampleSingleCodition.resx">
+      <DependentUpon>FormSampleSingleCodition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormSelectCustomer.resx">
+      <DependentUpon>FormSelectCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormSelectFish.resx">
+      <DependentUpon>FormSelectFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormSetColumnWidth.resx">
+      <DependentUpon>FormSetColumnWidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormTheproblemsheetCodition.resx">
+      <DependentUpon>FormTheproblemsheetCodition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\FormZoomImage.resx">
+      <DependentUpon>FormZoomImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirm.resx">
+      <DependentUpon>FormConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpot.resx">
+      <DependentUpon>FormSpot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpotDetail.resx">
+      <DependentUpon>FormSpotDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelfSale.resx">
+      <DependentUpon>FormSelfSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelfSaleDetail.resx">
+      <DependentUpon>FormSelfSaleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelfMakeDetail.resx">
+      <DependentUpon>FormSelfMakeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddFunCode.resx">
+      <DependentUpon>FormAddFunCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\PurchaseApplicationCondition.resx">
+      <DependentUpon>PurchaseApplicationCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FishBLL\FishBll.csproj">
+      <Project>{22834678-43ac-4788-9d86-f11de9d91c20}</Project>
+      <Name>FishBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FishEntity\FishEntity.csproj">
+      <Project>{077a80b4-8f13-4074-8966-90a869cbfa13}</Project>
+      <Name>FishEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkinForm\SkinForm.csproj">
+      <Project>{3ea4b685-f7f7-4592-85c2-67e1d4a70f87}</Project>
+      <Name>SkinForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UILibrary\UILibrary.csproj">
+      <Project>{54F1985F-C70B-401A-9CEB-C18086525506}</Project>
+      <Name>UILibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.png" />
+    <None Include="Images\img_bkg_normal.png" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

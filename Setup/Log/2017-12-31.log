@@ -1,0 +1,53 @@
+18:08:50.204    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 65
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 28
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 85
+18:08:50.252 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+18:08:52.089    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 65
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 28
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 85
+18:08:52.089 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+18:08:52.416    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 65
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 28
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 85
+18:08:52.417 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+18:09:02.433    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 65
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 28
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 85
+18:09:02.433 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+18:16:30.500    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 72
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 32
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+18:16:30.501 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+18:18:09.025    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.Exists(String code) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 41
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 63
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 32
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+18:18:10.568 Unknown column 'comNumbering' in 'where clause'
+18:19:06.694    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 72
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 32
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+18:19:06.695 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+18:22:57.727    在 FishBll.MySqlHelper.ExecuteSql(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 78
+   在 FishBll.Dao.ProcessStateDo.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 72
+   在 FishBll.Bll.ProcessStateBll.GetFormSalesRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 32
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 87
+18:22:57.730 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'now())' at line 1
+20:36:00.117  异常信息：Authentication to host '192.168.1.188' for user 'jxd' using method 'mysql_native_password' failed with message: Reading from the stream has failed.
+  堆栈信息:   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 308
+   在 FishBll.Dao.SetReviewDao.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Dao\SetReviewDao.cs:行号 312
+   在 FishBll.Bll.SetReviewBll.modelList(String userName, String strWhere) 位置 D:\练习\FishSolution\FishBLL\Bll\SetReviewBll.cs:行号 57
+   在 FishClient.AnnouncementRemindThread.getModelList() 位置 D:\练习\FishSolution\FishClient\AnnouncementRemindThread.cs:行号 85
+20:36:34.860    在 FishBll.MySqlHelper.GetSingle(String SQLString, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 513
+   在 FishBll.MySqlHelper.Exists(String sql, Object[] cmdParms) 位置 D:\练习\FishSolution\FishBLL\MySqlHelper.cs:行号 793
+   在 FishBll.Dao.ProcessStateDo.GetFormPaymentRequisition(String Numbering) 位置 D:\练习\FishSolution\FishBLL\Dao\ProcessStateDo.cs:行号 136
+   在 FishBll.Bll.ProcessStateBll.GetFormPaymentRequisition(String code) 位置 D:\练习\FishSolution\FishBLL\Bll\ProcessStateBll.cs:行号 53
+   在 FishClient.FormProcessState.Query() 位置 D:\练习\FishSolution\FishClient\FormProcessState.cs:行号 89
+20:36:34.862 Subquery returns more than 1 row

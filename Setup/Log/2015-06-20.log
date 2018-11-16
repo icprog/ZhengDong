@@ -1,0 +1,12 @@
+12:57:15.165  异常信息：句柄无效。
+  堆栈信息:   在 System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   在 System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   在 System.Drawing.Printing.PrintDocument.Print()
+   在 FastReport.Print.Printer.PrintInternal(PrinterSettings printerSettings, Int32 curPage)
+   在 FastReport.Print.Printer.Print(PrinterSettings printerSettings, Int32 curPage)
+   在 FastReport.Preview.PreparedPages.Print(Int32 curPage)
+   在 FastReport.Report.PrintPrepared()
+   在 FishClient.PrintUtil.PrintReport(Report report, String printerType) 位置 e:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\FishClient\PrintUtil.cs:行号 101
+   在 FishClient.PrintUtil.PrintContract(ContractEntity entity, List`1 details, String templatename) 位置 e:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\FishClient\PrintUtil.cs:行号 73
+22:31:31.037  异常信息：未将对象引用设置到对象的实例。
+  堆栈信息:   在 FishClient.UserManager.SaveUser(PersonEntity user) 位置 e:\MyJob\Person\Project\FishManageMS\SRC\FishSolution\FishClient\UserManager.cs:行号 118

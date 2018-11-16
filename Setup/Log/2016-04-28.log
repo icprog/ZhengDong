@@ -1,0 +1,15 @@
+10:00:33.333  异常信息：Timeout in IO operation
+  堆栈信息:   在 MySql.Data.MySqlClient.TimedStream.StopTimer()
+   在 MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.ReadOk(Boolean read)
+   在 MySql.Data.MySqlClient.Driver.SetDatabase(String dbName)
+   在 MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(String databaseName)
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 FishBll.MySqlHelper.Query(String SQLString) 位置 D:\练习\项目源码\FishSolution\FishBLL\MySqlHelper.cs:行号 328
+   在 FishBll.Dao.RemindDao.GetRemind(String where) 位置 D:\练习\项目源码\FishSolution\FishBLL\Dao\RemindDao.cs:行号 19
+   在 FishBll.Bll.RemindBll.GetRemind(String where) 位置 D:\练习\项目源码\FishSolution\FishBLL\Bll\RemindBll.cs:行号 12
+   在 FishClient.AnnouncementThread.GetCustomer() 位置 D:\练习\项目源码\FishSolution\FishClient\AnnouncementThread.cs:行号 81
